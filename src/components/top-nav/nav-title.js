@@ -4,10 +4,10 @@ import Radium from 'radium';
 var NavTitle = React.createClass({
   render () {
     return (
-      <h1 style={[styles.servrServ]}>
+      <h1 style={[styles.titleFont]}>
 
         <font>OmniWolf</font>
-        <font style={[styles.servrR]}>DSN</font>
+        <font style={[styles.blue]}>DSN</font>
 
       </h1>
     );
@@ -17,7 +17,7 @@ var NavTitle = React.createClass({
 NavTitle = Radium(NavTitle);
 
 var styles = {
-  servrServ: {
+  titleFont: {
 
     fontSize: '26px',
     fontWeight: 'normal',
@@ -29,7 +29,7 @@ var styles = {
 
     cursor: 'default',
   },
-  servrR: {
+  blue: {
 
     color: 'rgb(72, 124, 236)',
   }
