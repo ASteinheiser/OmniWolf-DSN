@@ -1,2 +1,2 @@
-# OmniWolf-DSN
-OmniWolf DSN is a Distributed Sensor Network system.
+# Servr
+A sample app to practice React and Radium
