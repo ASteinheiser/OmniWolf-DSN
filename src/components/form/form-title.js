@@ -25,7 +25,7 @@ var styles = {
     color: 'rgb(215, 215, 215)',
 
     textAlign: 'center',
-    margin: '-15px 0px 15px 0px',
+    margin: '0px 10px 20px 10px',
     WebkitFontSmoothing: 'antialiased',
 
     cursor: 'default',

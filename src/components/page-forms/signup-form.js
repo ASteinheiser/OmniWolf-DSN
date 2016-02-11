@@ -1,4 +1,5 @@
 import React from 'react';
+import Radium from 'radium';
 
 import FormField from '../form/form-field';
 import FormInput from '../form/form-input';
@@ -31,7 +32,7 @@ var SignupForm = React.createClass({
 
   render () {
     return (
-      <div>
+      <div style={[styles.signupForm]}>
 
         <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
 
@@ -71,5 +72,15 @@ var SignupForm = React.createClass({
     );
   }
 });
+
+SignupForm = Radium(SignupForm);
+
+var styles = {
+  signupForm: {
+
+    width: '80%',
+    margin: '10px auto 0px auto'
+  }
+}
 
 export default SignupForm;
