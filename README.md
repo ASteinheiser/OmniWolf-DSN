@@ -1,2 +1,2 @@
-# Servr
-A sample app to practice React and Radium
+# OmniWolf DSN
+A distributed sensor network system.

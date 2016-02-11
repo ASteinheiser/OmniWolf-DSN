@@ -1,7 +1,7 @@
 {
-  "name": "servr",
+  "name": "omniwolf",
   "version": "1.0.0",
-  "description": "Rate your server.",
+  "description": "Manage your sensors.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
