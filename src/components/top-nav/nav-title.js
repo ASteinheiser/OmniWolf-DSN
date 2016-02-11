@@ -6,8 +6,8 @@ var NavTitle = React.createClass({
     return (
       <h1 style={[styles.servrServ]}>
 
-        <font>Serv</font>
-        <font style={[styles.servrR]}>r</font>
+        <font>OmniWolf</font>
+        <font style={[styles.servrR]}>DSN</font>
 
       </h1>
     );

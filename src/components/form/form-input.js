@@ -37,6 +37,7 @@ var styles = {
     WebkitFontSmoothing: 'antialiased',
     backgroundColor: 'rgba(43, 43, 43, 0)',
 
+    width: '100%',
     marginBottom: '15px',
     padding: '5px',
 

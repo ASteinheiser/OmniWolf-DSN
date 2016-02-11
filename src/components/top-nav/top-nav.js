@@ -7,15 +7,14 @@ import TopNavItem from './top-nav-item'
 var TopNav = React.createClass({
   render () {
     return (
-      <div style={[styles.navTab]}>
+      <div style={[styles.navBar]}>
 
         <NavTitle/>
 
-        <div style={[styles.topNavTabs]}>
+        <div style={[styles.navTabs]}>
           <TopNavItem href='/#/dashboard' text='Dashboard'/>
-          <TopNavItem href='/#/notifications' text='Notifications'/>
           <TopNavItem href='/#/account' text='Account'/>
-          <TopNavItem href='/#/login' text='Log out'/>
+          <TopNavItem href='/#/login' text='Log Out'/>
         </div>
 
       </div>
@@ -26,7 +25,7 @@ var TopNav = React.createClass({
 TopNav = Radium(TopNav);
 
 var styles = {
-  navTab: {
+  navBar: {
 
     backgroundColor: 'rgb(36, 41, 46)',
     WebkitBoxShadow: '0px 1px 10px 0px rgba(0,0,0,0.75)',
@@ -36,7 +35,7 @@ var styles = {
     width: '100%',
     minHeight: '46px',
   },
-  topNavTabs: {
+  navTabs: {
 
     flex: 1,
     display: 'flex',
