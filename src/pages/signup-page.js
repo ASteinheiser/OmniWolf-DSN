@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WaiterBackground from '../components/backgrounds/waiter-background';
+import LoginBackground from '../components/backgrounds/login-background';
 import OpaqueBox from '../components/backgrounds/opaque-box';
 import FormTitle from '../components/form/form-title';
 import SignupForm from '../components/page-forms/signup-form';
@@ -8,7 +8,7 @@ import SignupForm from '../components/page-forms/signup-form';
 var SignupPage = React.createClass({
   render () {
     return (
-      <WaiterBackground>
+      <LoginBackground>
         <OpaqueBox>
 
           <FormTitle />
@@ -16,7 +16,7 @@ var SignupPage = React.createClass({
           <SignupForm />
 
         </OpaqueBox>
-      </WaiterBackground>
+      </LoginBackground>
     );
   }
 });

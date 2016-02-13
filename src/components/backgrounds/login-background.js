@@ -1,23 +1,23 @@
 import React from 'react';
 import Radium from 'radium';
 
-var WaiterBackground = React.createClass({
+var LoginBackground = React.createClass({
   render () {
     return (
-      <div style={[styles.waiterBackground]}>
+      <div style={[styles.loginBackground]}>
         {this.props.children}
       </div>
     );
   }
 });
 
-WaiterBackground = Radium(WaiterBackground);
+LoginBackground = Radium(LoginBackground);
 
 var styles = {
-  waiterBackground: {
+  loginBackground: {
 
     display: 'flex',
-    backgroundImage: 'url(src/images/waiter.jpg)',
+    backgroundColor: 'rgb(130,176,191)',
 
     backgroundSize: 'cover',
     position: 'absolute',
@@ -28,4 +28,4 @@ var styles = {
   }
 }
 
-export default WaiterBackground;
+export default LoginBackground;

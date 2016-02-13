@@ -12,6 +12,8 @@ var TopNav = React.createClass({
         <NavTitle/>
 
         <div style={[styles.navTabs]}>
+          <TopNavItem href='/#/pre-assembled-kits' text='Pre-Assembled Kits'/>
+          <TopNavItem href='/#/part-builder' text='Part Builder'/>
           <TopNavItem href='/#/dashboard' text='Dashboard'/>
           <TopNavItem href='/#/account' text='Account'/>
           <TopNavItem href='/#/login' text='Log Out'/>

@@ -20,7 +20,7 @@ var styles = {
 
     padding: '30px',
     borderRadius: '5px',
-    margin: '168px auto auto auto',
+    margin: 'auto auto auto auto',
   }
 }
 

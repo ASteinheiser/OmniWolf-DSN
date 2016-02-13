@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WaiterBackground from '../components/backgrounds/waiter-background';
+import LoginBackground from '../components/backgrounds/login-background';
 import OpaqueBox from '../components/backgrounds/opaque-box';
 import FormTitle from '../components/form/form-title';
 import NewProfileForm from '../components/page-forms/new-profile-form';
@@ -8,14 +8,14 @@ import NewProfileForm from '../components/page-forms/new-profile-form';
 var NewProfilePage = React.createClass({
   render () {
     return (
-      <WaiterBackground>
+      <LoginBackground>
         <OpaqueBox>
 
           <FormTitle />
           <NewProfileForm />
 
         </OpaqueBox>
-      </WaiterBackground>
+      </LoginBackground>
     );
   }
 });
