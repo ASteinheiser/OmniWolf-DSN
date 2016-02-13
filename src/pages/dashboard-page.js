@@ -9,8 +9,7 @@ var DashboardPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        <RegisteredDevice
-          name='Baby Monitor'/>
+        <RegisteredDevice name='Baby Monitor'/>
 
         <div style={[styles.buttonStyle]}>
           <PrimaryButton name='registerDevice' type='submit' text='Register New Device'/>
@@ -26,7 +25,7 @@ DashboardPage = Radium(DashboardPage);
 var styles = {
   buttonStyle: {
 
-    width: '90%',
+    width: '94%',
 
     margin: '15px auto 0px auto'
   }
