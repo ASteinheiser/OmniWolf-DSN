@@ -9,7 +9,8 @@ var DashboardPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        <RegisteredDevice name='device1'/>
+        <RegisteredDevice
+          name='Baby Monitor'/>
 
         <div style={[styles.buttonStyle]}>
           <PrimaryButton name='registerDevice' type='submit' text='Register New Device'/>
