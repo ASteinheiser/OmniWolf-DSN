@@ -2,14 +2,14 @@ import React from 'react';
 
 import LayoutShell from '../components/layouts/basic-layout';
 
-var AccountPage = React.createClass({
+var PreAssembledKitsPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        this is the account page
+        this is the pre-assembled-kits page
       </LayoutShell>
     );
   }
 });
 
-export default AccountPage;
+export default PreAssembledKitsPage;

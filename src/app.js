@@ -7,6 +7,8 @@ import NewProfileRoute from './routes/new-profile';
 import NotFoundRoute from './routes/not-found';
 import DashboardRoute from './routes/dashboard';
 import AccountRoute from './routes/account';
+import PreAssembledKitsRoute from './routes/pre-assembled-kits';
+import KitBuilderRoute from './routes/kit-builder';
 
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
@@ -28,6 +30,8 @@ var routes = (
     <Route path='signup/profile' handler={NewProfileRoute}/>
     <Route path='dashboard' handler={DashboardRoute}/>
     <Route path='account' handler={AccountRoute}/>
+    <Route path='pre-assembled-kits' handler={PreAssembledKitsRoute}/>
+    <Route path='kit-builder' handler={KitBuilderRoute}/>
     <Route path='*' handler={NotFoundRoute}/>
   </Route>
 );

@@ -17,7 +17,7 @@ var styles = {
   loginBackground: {
 
     display: 'flex',
-    backgroundColor: 'rgb(130,176,191)',
+    backgroundColor: 'rgb(240,240,240)',
 
     backgroundSize: 'cover',
     position: 'absolute',

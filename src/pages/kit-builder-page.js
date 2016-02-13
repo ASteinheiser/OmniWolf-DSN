@@ -2,14 +2,14 @@ import React from 'react';
 
 import LayoutShell from '../components/layouts/basic-layout';
 
-var AccountPage = React.createClass({
+var KitBuilderPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        this is the account page
+        this is the kit builder
       </LayoutShell>
     );
   }
 });
 
-export default AccountPage;
+export default KitBuilderPage;
