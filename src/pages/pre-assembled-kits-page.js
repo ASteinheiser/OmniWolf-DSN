@@ -7,17 +7,26 @@ var PreAssembledKitsPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        <KitItem name='Baby Monitor' description='this is a baby monitor'/>
-        <KitItem name='Fire Detector' description='this is a fire detector'/>
-        <KitItem name='Carbon Monoxide Detector' description='this is a carbon monoxide detector'/>
-        <KitItem name='Motion Detector' description='this is a motion sensor'/>
-        <KitItem name='Temperature Detector' description='this is a temperature sensor'/>
-        <KitItem name='Heartrate Detector' description='this is a heartrate sensor'/>
-        <KitItem name='Temperature Detector' description='this is a temperature sensor'/>
-        <KitItem name='Temperature Detector' description='this is a temperature sensor'/>
-        <KitItem name='Temperature Detector' description='this is a temperature sensor'/>
-        <KitItem name='Temperature Detector' description='this is a temperature sensor'/>
-        <KitItem name='Temperature Detector' description='this is a temperature sensor'/>
+        <KitItem
+          img='src/images/baby-monitor.jpg'
+          name='Baby Monitor'
+          description='This is a baby monitor with a fire, motion, and sound sensor. You can always add more sensors later.'
+          price='39.99'/>
+        <KitItem
+          img='src/images/fire.png'
+          name='Fire Detector'
+          description='This is a fire detector that can be placed anywhere in your house.'
+          price='29.99'/>
+        <KitItem
+          img='src/images/motion.png'
+          name='Motion Detector'
+          description='This is a motion detector that can be placed near a window, pool, or anywhere you want.'
+          price='29.99'/>
+        <KitItem
+          img='src/images/carbon-monoxide.png'
+          name='Carbon Monoxide Detector'
+          description='This is a carbon monoxide detector which is great for your garage.'
+          price='29.99'/>
       </LayoutShell>
     );
   }

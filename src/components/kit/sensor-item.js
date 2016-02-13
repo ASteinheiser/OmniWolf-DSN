@@ -26,7 +26,7 @@ var SensorItem = React.createClass({
           </div>
         </div>
         <div style={[styles.sensorPrice]}>
-          Price: {this.props.price}
+          Price: ${this.props.price}
           <div style={[styles.addToCartButton]}>
             <PrimaryButton name='addToCart' type='submit' text='Add To Cart'/>
           </div>
