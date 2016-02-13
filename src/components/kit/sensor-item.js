@@ -12,10 +12,10 @@ var SensorItem = React.createClass({
     return (
       <div style={[styles.sensorItemStyle]}>
         <div style={[styles.sensorNameBox]}>
-          <font>{this.props.name}</font>
+          {this.props.name}
         </div>
         <div style={[styles.sensorDescriptionBox]}>
-          <font>{this.props.description}</font>
+          {this.props.description}
         </div>
       </div>
     );

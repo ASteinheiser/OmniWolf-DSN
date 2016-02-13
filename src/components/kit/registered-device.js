@@ -11,9 +11,9 @@ var RegisteredDevice = React.createClass({
     return (
       <div style={[styles.registeredDeviceStyle]}>
         <div style={[styles.deviceNameBox]}>
-          <font>{this.props.name}</font>
+          {this.props.name}
         </div>
-        <div style={[styles.deviceDescriptionBox]}>
+          <div style={[styles.deviceDescriptionBox]}>
         </div>
       </div>
     );

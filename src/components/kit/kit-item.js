@@ -12,10 +12,10 @@ var KitItem = React.createClass({
     return (
       <div style={[styles.kitItemStyle]}>
         <div style={[styles.kitNameBox]}>
-          <font>{this.props.name}</font>
+          {this.props.name}
         </div>
         <div style={[styles.kitDescriptionBox]}>
-          <font>{this.props.description}</font>
+          {this.props.description}
         </div>
       </div>
     );

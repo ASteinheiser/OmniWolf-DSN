@@ -12,9 +12,9 @@ var DashboardPage = React.createClass({
         <RegisteredDevice name='device1'/>
 
         <div style={[styles.buttonStyle]}>
-          <PrimaryButton name='registerDevice' type='submit' text='Register Device'/>
+          <PrimaryButton name='registerDevice' type='submit' text='Register New Device'/>
         </div>
-        
+
       </LayoutShell>
     );
   }
