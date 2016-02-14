@@ -1,4 +1,5 @@
 import React from 'react';
+import Radium from 'radium';
 
 import LayoutShell from '../components/layouts/basic-layout';
 import SensorItem from '../components/kit/sensor-item';
@@ -27,9 +28,24 @@ var KitBuilderPage = React.createClass({
           name='Temperature Sensor'
           description='This is an analog sensor that can detect the current temperature.'
           price='2.99'/>
+        <SensorItem
+          img='src/images/carbon-monoxide-sensor.png'
+          name='Carbon Monoxide Sensor'
+          description='This is a digital sensor that can notify you of carbon monoxide leaks, great for garages.'
+          price='2.99'/>
+        <div style={[styles.bullshit]}>.</div>
       </LayoutShell>
     );
   }
 });
+
+KitBuilderPage = Radium(KitBuilderPage);
+
+var styles = {
+  bullshit: {
+
+    height: '50px'
+  }
+};
 
 export default KitBuilderPage;

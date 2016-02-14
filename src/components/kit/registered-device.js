@@ -81,7 +81,7 @@ var styles = {
     width: '47%',
     float: 'left',
 
-    margin: '12px'
+    margin: '12px 12px 12px 240px'
   },
   deviceName: {
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Radium from 'radium';
 
 import LayoutShell from '../components/layouts/basic-layout';
 import KitItem from '../components/kit/kit-item';
@@ -27,9 +28,24 @@ var PreAssembledKitsPage = React.createClass({
           name='Carbon Monoxide Detector'
           description='This is a carbon monoxide detector which is great for your garage.'
           price='29.99'/>
+        <KitItem
+          img='src/images/noise.png'
+          name='Noise'
+          description='This is a noise detector which is great for detecting any sounds.'
+          price='29.99'/>
+        <div style={[styles.bullshit]}>.</div>
       </LayoutShell>
     );
   }
 });
+
+PreAssembledKitsPage = Radium(PreAssembledKitsPage);
+
+var styles = {
+  bullshit: {
+
+    height: '50px'
+  }
+};
 
 export default PreAssembledKitsPage;
