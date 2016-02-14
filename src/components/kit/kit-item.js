@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-import PrimaryButton from '../buttons/primary-button';
+import SecondaryButton from '../buttons/secondary-button';
 
 var KitItem = React.createClass({
   propTypes: {
@@ -28,7 +28,7 @@ var KitItem = React.createClass({
         <div style={[styles.kitPrice]}>
           Price: ${this.props.price}
           <div style={[styles.addToCartButton]}>
-            <PrimaryButton name='addToCart' type='submit' text='Add To Cart'/>
+            <SecondaryButton name='addToCart' type='submit' text='Add To Cart'/>
           </div>
         </div>
       </div>

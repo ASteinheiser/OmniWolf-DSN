@@ -6,32 +6,38 @@ import SecondaryButton from '../buttons/secondary-button';
 var RegisteredDevice = React.createClass({
   mixins: [ReactFireMixin],
 
-  componentWillMount: function() {
-    var firebaseRef = new Firebase("https://omniwolfdsn.firebaseio.com/Devices");
-
-    this.bindAsArray(firebaseRef, 'Devices');
-
-    firebaseRef.on('value', function(snapshot) {
-      console.log(snapshot.val());
-    }, function (errorObject) {
-      console.log('The read failed: ' + errorObject.code);
-    });
+  getInitialState: function() {
+    return {
+      device: null
+    }
   },
 
-  componentWillUnmount: function() {
-    this.unbind('Devices');
+  componentDidMount: function() {
+    this.firebaseRef = new Firebase("https://omniwolfdsn.firebaseio.com/Devices");
+
+    var self = this;
+
+    this.firebaseRef.on('value', function(snapshot) {
+
+      var device = snapshot.val();
+
+      self.setState({
+        device: device
+      });
+
+    });
   },
 
   propTypes: {
 
     name: React.PropTypes.string.isRequired,
-    device: React.PropTypes.string,
-    fire: React.PropTypes.string,
-    noise: React.PropTypes.string,
-    motion: React.PropTypes.string,
   },
 
   render () {
+    console.log('state', this.state);
+    if (!this.state.device){
+      return <div style={[styles.registeredDeviceStyle]}>loading</div>
+    }
     return (
       <div style={[styles.registeredDeviceStyle]}>
         <div style={[styles.deviceName]}>
@@ -41,21 +47,22 @@ var RegisteredDevice = React.createClass({
           Fire
         </div>
         <div style={[styles.deviceDataValue]}>
-          {this.props.fire}
+          {this.state.device.RegisterDevice.fire}
         </div>
         <div style={[styles.deviceDataTitle]}>
           Noise
         </div>
         <div style={[styles.deviceDataValue]}>
-          {this.props.noise}
+          {this.state.device.RegisterDevice.sound}
         </div>
         <div style={[styles.deviceDataTitle]}>
           Motion
         </div>
         <div style={[styles.deviceDataValue]}>
-          {this.props.motion}
+          {this.state.device.RegisterDevice.motion}
         </div>
         <div style={[styles.deviceButtons]}>
+          <SecondaryButton name='renameDevice' type='submit' text='Rename this Device'/>
           <SecondaryButton name='generateCode' type='submit' text='Generate Code for this Device'/>
           <SecondaryButton name='editCode' type='submit' text='Edit Code for this Device'/>
         </div>
@@ -68,11 +75,13 @@ RegisteredDevice = Radium(RegisteredDevice);
 
 var styles = {
   registeredDeviceStyle: {
-    border: '1px solid grey',
+    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
     height: '50%',
-    width: '50%',
-    float: 'left'
+    width: '47%',
+    float: 'left',
+
+    margin: '12px'
   },
   deviceName: {
 
@@ -117,7 +126,7 @@ var styles = {
   deviceButtons: {
 
     width: '90%',
-    margin: '40px 20px 0px 0px',
+    margin: '20px 20px 0px 0px',
     float: 'right'
   }
 }
