@@ -43,7 +43,9 @@ KitItem = Radium(KitItem);
 var styles = {
   kitBox: {
 
-    margin: '15px 0px 15px 0px',
+    width: '97%',
+
+    margin: '15px auto 15px auto',
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
   },
   kitItemStyle: {
@@ -69,6 +71,7 @@ var styles = {
     paddingLeft: '10px',
     float: 'left',
     height: '100%',
+    width: '473px',
 
     borderLeft: '1px solid grey'
   },
@@ -80,7 +83,7 @@ var styles = {
     WebkitFontSmoothing: 'antialiased',
     color: 'black',
 
-    width: '500px',
+    width: '473px',
     paddingTop: '10px'
   },
   kitPrice: {

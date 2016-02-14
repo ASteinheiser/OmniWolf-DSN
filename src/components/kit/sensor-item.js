@@ -43,7 +43,9 @@ SensorItem = Radium(SensorItem);
 var styles = {
   sensorBox: {
 
-    margin: '15px 0px 15px 0px',
+    width: '97%',
+
+    margin: '15px auto 15px auto',
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
   },
   sensorItemStyle: {
@@ -80,7 +82,7 @@ var styles = {
     WebkitFontSmoothing: 'antialiased',
     color: 'black',
 
-    width: '500px',
+    width: '473px',
     paddingTop: '10px'
   },
   sensorPrice: {
