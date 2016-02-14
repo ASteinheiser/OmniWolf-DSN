@@ -15,7 +15,7 @@ var KitBuilderPage = React.createClass({
         <SensorItem
           img='src/images/ir-sensor.jpg'
           name='Motion Sensor'
-          description='This is an analog sensor that uses an IR transmitter and reciever to detect motion.'
+          description='This is an digital sensor that uses an IR transmitter and reciever to detect motion.'
           price='2.99'/>
         <SensorItem
           img='src/images/sound-sensor.jpg'

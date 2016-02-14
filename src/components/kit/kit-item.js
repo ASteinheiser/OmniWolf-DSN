@@ -14,21 +14,23 @@ var KitItem = React.createClass({
 
   render () {
     return (
-      <div style={[styles.kitItemStyle]}>
-        <div>
-          <img style={[styles.kitImage]} src={this.props.img}/>
-        </div>
-        <div style={[styles.kitTitle]}>
-          {this.props.name}
-          <br/>
-          <div style={[styles.kitDescription]}>
-            {this.props.description}
+      <div style={[styles.kitBox]}>
+        <div style={[styles.kitItemStyle]}>
+          <div>
+            <img style={[styles.kitImage]} src={this.props.img}/>
           </div>
-        </div>
-        <div style={[styles.kitPrice]}>
-          Price: ${this.props.price}
-          <div style={[styles.addToCartButton]}>
-            <SecondaryButton name='addToCart' type='submit' text='Add To Cart'/>
+          <div style={[styles.kitTitle]}>
+            {this.props.name}
+            <br/>
+            <div style={[styles.kitDescription]}>
+              {this.props.description}
+            </div>
+          </div>
+          <div style={[styles.kitPrice]}>
+            Price: ${this.props.price}
+            <div style={[styles.addToCartButton]}>
+              <SecondaryButton name='addToCart' type='submit' text='Add To Cart'/>
+            </div>
           </div>
         </div>
       </div>
@@ -39,9 +41,12 @@ var KitItem = React.createClass({
 KitItem = Radium(KitItem);
 
 var styles = {
-  kitItemStyle: {
+  kitBox: {
 
-    borderBottom: '1px solid grey',
+    margin: '15px 0px 15px 0px',
+    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
+  },
+  kitItemStyle: {
 
     height: '150px',
     width: '100%'

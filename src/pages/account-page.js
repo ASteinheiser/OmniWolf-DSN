@@ -9,11 +9,13 @@ var AccountPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        <AccountField title='Full Name' value='Andrew Steinheiser'/>
-        <AccountField title='Email' value='andrew@octoblu.com'/>
+        <div style={[styles.accountCard]}>
+          <AccountField title='Full Name' value='Andrew Steinheiser'/>
+          <AccountField title='Email' value='andrew@octoblu.com'/>
 
-        <div style={[styles.buttonStyle]}>
-          <SecondaryButton name='changePassword' type='submit' text='Change Password'/>
+          <div style={[styles.buttonStyle]}>
+            <SecondaryButton name='changePassword' type='submit' text='Change Password'/>
+          </div>
         </div>
       </LayoutShell>
     );
@@ -25,10 +27,18 @@ AccountPage = Radium(AccountPage);
 var styles = {
   buttonStyle: {
 
-    width: '40%',
+    width: '95%',
 
     marginLeft: '10px',
-    marginTop: '15px'
+    marginTop: '15px',
+    paddingBottom: '10px'
+  },
+  accountCard: {
+
+    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
+
+    width: '400px',
+    margin: '20px auto 0px auto'
   }
 }
 

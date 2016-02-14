@@ -14,21 +14,23 @@ var SensorItem = React.createClass({
 
   render () {
     return (
-      <div style={[styles.sensorItemStyle]}>
-        <div>
-          <img style={[styles.sensorImage]} src={this.props.img}/>
-        </div>
-        <div style={[styles.sensorTitle]}>
-          {this.props.name}
-          <br/>
-          <div style={[styles.sensorDescription]}>
-            {this.props.description}
+      <div style={[styles.sensorBox]}>
+        <div style={[styles.sensorItemStyle]}>
+          <div>
+            <img style={[styles.sensorImage]} src={this.props.img}/>
           </div>
-        </div>
-        <div style={[styles.sensorPrice]}>
-          Price: ${this.props.price}
-          <div style={[styles.addToCartButton]}>
-            <SecondaryButton name='addToCart' type='submit' text='Add To Cart'/>
+          <div style={[styles.sensorTitle]}>
+            {this.props.name}
+            <br/>
+            <div style={[styles.sensorDescription]}>
+              {this.props.description}
+            </div>
+          </div>
+          <div style={[styles.sensorPrice]}>
+            Price: ${this.props.price}
+            <div style={[styles.addToCartButton]}>
+              <SecondaryButton name='addToCart' type='submit' text='Add To Cart'/>
+            </div>
           </div>
         </div>
       </div>
@@ -39,9 +41,12 @@ var SensorItem = React.createClass({
 SensorItem = Radium(SensorItem);
 
 var styles = {
-  sensorItemStyle: {
+  sensorBox: {
 
-    borderBottom: '1px solid grey',
+    margin: '15px 0px 15px 0px',
+    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
+  },
+  sensorItemStyle: {
 
     height: '150px',
     width: '100%'

@@ -36,7 +36,7 @@ var RegisteredDevice = React.createClass({
   render () {
     console.log('state', this.state);
     if (!this.state.device){
-      return <div style={[styles.registeredDeviceStyle]}>loading</div>
+      return <div style={[styles.deviceName]}>loading</div>
     }
     return (
       <div style={[styles.registeredDeviceStyle]}>
