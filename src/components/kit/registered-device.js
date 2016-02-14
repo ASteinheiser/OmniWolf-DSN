@@ -1,12 +1,34 @@
 import React from 'react';
 import Radium from 'radium';
 
-import PrimaryButton from '../buttons/primary-button';
+import SecondaryButton from '../buttons/secondary-button';
 
 var RegisteredDevice = React.createClass({
+  mixins: [ReactFireMixin],
+
+  componentWillMount: function() {
+    var firebaseRef = new Firebase("https://omniwolfdsn.firebaseio.com/Devices");
+
+    this.bindAsArray(firebaseRef, 'Devices');
+
+    firebaseRef.on('value', function(snapshot) {
+      console.log(snapshot.val());
+    }, function (errorObject) {
+      console.log('The read failed: ' + errorObject.code);
+    });
+  },
+
+  componentWillUnmount: function() {
+    this.unbind('Devices');
+  },
+
   propTypes: {
 
-    name: React.PropTypes.string.isRequired
+    name: React.PropTypes.string.isRequired,
+    device: React.PropTypes.string,
+    fire: React.PropTypes.string,
+    noise: React.PropTypes.string,
+    motion: React.PropTypes.string,
   },
 
   render () {
@@ -19,23 +41,23 @@ var RegisteredDevice = React.createClass({
           Fire
         </div>
         <div style={[styles.deviceDataValue]}>
-          hello
+          {this.props.fire}
         </div>
         <div style={[styles.deviceDataTitle]}>
           Noise
         </div>
         <div style={[styles.deviceDataValue]}>
-          hello
+          {this.props.noise}
         </div>
         <div style={[styles.deviceDataTitle]}>
           Motion
         </div>
         <div style={[styles.deviceDataValue]}>
-          hello
+          {this.props.motion}
         </div>
         <div style={[styles.deviceButtons]}>
-          <PrimaryButton name='generateCode' type='submit' text='Generate Code for this Device'/>
-          <PrimaryButton name='editCode' type='submit' text='Edit Code for this Device'/>
+          <SecondaryButton name='generateCode' type='submit' text='Generate Code for this Device'/>
+          <SecondaryButton name='editCode' type='submit' text='Edit Code for this Device'/>
         </div>
       </div>
     );
@@ -74,6 +96,7 @@ var styles = {
     textAlign: 'center',
     WebkitFontSmoothing: 'antialiased',
 
+    height: '28px',
     float: 'left',
     width: '50%',
     paddingTop: '15px'
@@ -86,6 +109,7 @@ var styles = {
     textAlign: 'center',
     WebkitFontSmoothing: 'antialiased',
 
+    height: '28px',
     float: 'left',
     width: '50%',
     paddingTop: '15px'
