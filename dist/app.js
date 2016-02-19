@@ -26748,6 +26748,8 @@
 	    backgroundColor: 'rgb(240,240,240)',
 	    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
+	    backgroundColor: 'aliceblue',
+
 	    width: '100%',
 	    height: '100%',
 	    maxWidth: '900px',
