@@ -77,7 +77,7 @@ var styles = {
   registeredDeviceStyle: {
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
-    height: '50%',
+    height: '380px',
     width: '47%',
     float: 'left',
 
