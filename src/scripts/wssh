@@ -6,13 +6,13 @@ echo "Okay, here's what I'll do for you:"
 echo ""
 echo "webpack"
 echo "git add ."
-echo "git commit -m \"wsshing\""
+echo "git commit -m \"${1}\""
 echo "git push"
 echo "scp -r dist/. ubuntu@52.36.92.204:/var/www/html/"
 echo ""
 read -p "Press [Enter] key to continue... "
 webpack
 git add .
-git commit -m "wsshing"
+git commit -m "${1}"
 git push
 scp -r dist/. ubuntu@52.36.92.204:/var/www/html/
