@@ -38,6 +38,7 @@ var styles = {
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
     width: '400px',
+    height: '150px',
     margin: '20px auto 0px auto'
   }
 }
