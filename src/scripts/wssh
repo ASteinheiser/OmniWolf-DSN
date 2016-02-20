@@ -8,11 +8,11 @@ echo "webpack"
 echo "git add ."
 echo "git commit -m \"${1}\""
 echo "git push"
-echo "scp -r dist/. ubuntu@52.36.92.204:/var/www/html/"
+echo "scp -r dist/. ubuntu@omniwolf.io:/var/www/html/"
 echo ""
 read -p "Press [Enter] key to continue... "
 webpack
 git add .
 git commit -m "${1}"
 git push
-scp -r dist/. ubuntu@52.36.92.204:/var/www/html/
+scp -r dist/. ubuntu@omniwolf.io:/var/www/html/
