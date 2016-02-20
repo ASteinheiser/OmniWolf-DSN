@@ -26828,7 +26828,6 @@
 	  },
 
 	  render: function render() {
-	    console.log('state', this.state);
 	    if (!this.state.device) {
 	      return _react2['default'].createElement(
 	        'div',
