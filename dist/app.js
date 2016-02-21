@@ -25279,7 +25279,7 @@
 	    return _react2['default'].createElement(
 	      'div',
 	      { style: [styles.navBar] },
-	      _react2['default'].createElement(_navTitle2['default'], null),
+	      _react2['default'].createElement(_navTitle2['default'], { href: '/#/home' }),
 	      _react2['default'].createElement(
 	        'div',
 	        { style: [styles.navTabs] },
@@ -25347,18 +25347,22 @@
 	var NavTitle = _react2['default'].createClass({
 	  displayName: 'NavTitle',
 
+	  propTypes: {
+	    href: _react2['default'].PropTypes.string.isRequired
+	  },
+
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'h1',
-	      { style: [styles.titleFont] },
+	      { style: [styles.spacing] },
 	      _react2['default'].createElement(
-	        'font',
-	        null,
+	        'a',
+	        { href: this.props.href, style: [styles.noUnderline, styles.titleFont] },
 	        'OmniWolf'
 	      ),
 	      _react2['default'].createElement(
-	        'font',
-	        { style: [styles.blue] },
+	        'a',
+	        { href: this.props.href, style: [styles.noUnderline, styles.titleFont, styles.blue] },
 	        'DSN'
 	      )
 	    );
@@ -25368,6 +25372,10 @@
 	NavTitle = (0, _radium2['default'])(NavTitle);
 
 	var styles = {
+	  spacing: {
+
+	    margin: 'auto 0px auto 15px'
+	  },
 	  titleFont: {
 
 	    fontSize: '26px',
@@ -25376,9 +25384,11 @@
 	    color: 'rgb(215, 215, 215)',
 	    WebkitFontSmoothing: 'antialiased',
 
-	    margin: 'auto 0px auto 15px',
+	    cursor: 'pointer'
+	  },
+	  noUnderline: {
 
-	    cursor: 'default'
+	    textDecoration: 'none'
 	  },
 	  blue: {
 

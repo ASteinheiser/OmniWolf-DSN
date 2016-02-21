@@ -9,7 +9,7 @@ var TopNav = React.createClass({
     return (
       <div style={[styles.navBar]}>
 
-        <NavTitle/>
+        <NavTitle href='/#/home'/>
 
         <div style={[styles.navTabs]}>
           <TopNavItem href='/#/pre-assembled-kits' text='Pre-Assembled Kits'/>

@@ -2,12 +2,16 @@ import React from 'react';
 import Radium from 'radium';
 
 var NavTitle = React.createClass({
+  propTypes: {
+    href: React.PropTypes.string.isRequired,
+  },
+
   render () {
     return (
-      <h1 style={[styles.titleFont]}>
+      <h1 style={[styles.spacing]}>
 
-        <font>OmniWolf</font>
-        <font style={[styles.blue]}>DSN</font>
+        <a href={this.props.href} style={[styles.noUnderline, styles.titleFont]}>OmniWolf</a>
+        <a href={this.props.href} style={[styles.noUnderline, styles.titleFont, styles.blue]}>DSN</a>
 
       </h1>
     );
@@ -17,6 +21,10 @@ var NavTitle = React.createClass({
 NavTitle = Radium(NavTitle);
 
 var styles = {
+  spacing: {
+
+    margin: 'auto 0px auto 15px',
+  },
   titleFont: {
 
     fontSize: '26px',
@@ -25,9 +33,11 @@ var styles = {
     color: 'rgb(215, 215, 215)',
     WebkitFontSmoothing: 'antialiased',
 
-    margin: 'auto 0px auto 15px',
+    cursor: 'pointer',
+  },
+  noUnderline: {
 
-    cursor: 'default',
+    textDecoration: 'none',
   },
   blue: {
 
