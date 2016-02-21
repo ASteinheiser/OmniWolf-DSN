@@ -3,7 +3,7 @@ import Radium from 'radium';
 
 import SecondaryButton from '../buttons/secondary-button';
 
-var RegisteredDevice = React.createClass({
+var RegisteredItem = React.createClass({
   mixins: [ReactFireMixin],
 
   getInitialState: function() {
@@ -70,7 +70,7 @@ var RegisteredDevice = React.createClass({
   }
 });
 
-RegisteredDevice = Radium(RegisteredDevice);
+RegisteredItem = Radium(RegisteredItem);
 
 var styles = {
   registeredDeviceStyle: {
@@ -130,4 +130,4 @@ var styles = {
   }
 }
 
-export default RegisteredDevice;
+export default RegisteredItem;

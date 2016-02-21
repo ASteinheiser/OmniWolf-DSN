@@ -1,10 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
-var MiddleSection = React.createClass({
+var PaperContainer = React.createClass({
   render () {
     return (
-      <div style={[styles.middleSection]}>
+      <div style={[styles.paper]}>
         <div style={[styles.hiddenScrollbar]}>
           {this.props.children}
         </div>
@@ -13,10 +13,10 @@ var MiddleSection = React.createClass({
   }
 });
 
-MiddleSection = Radium(MiddleSection);
+PaperContainer = Radium(PaperContainer);
 
 var styles = {
-  middleSection: {
+  paper: {
 
     backgroundColor: 'rgb(240,240,240)',
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
@@ -38,4 +38,4 @@ var styles = {
   }
 }
 
-export default MiddleSection;
+export default PaperContainer;

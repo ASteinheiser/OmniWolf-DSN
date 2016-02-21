@@ -1,23 +1,23 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/layout-shell';
-import AccountField from '../components/page-forms/account-field';
+import PageLayout from '../components/layouts/page-layout';
+import AccountForm from '../components/form/account-form';
 import SecondaryButton from '../components/buttons/secondary-button';
 
 var AccountPage = React.createClass({
   render () {
     return (
-      <LayoutShell>
+      <PageLayout>
         <div style={[styles.accountCard]}>
-          <AccountField title='Full Name' value='Andrew Steinheiser'/>
-          <AccountField title='Email' value='andrew@octoblu.com'/>
+          <AccountForm title='Full Name' value='Andrew Steinheiser'/>
+          <AccountForm title='Email' value='andrew@octoblu.com'/>
 
-          <div style={[styles.buttonStyle]}>
+          <div style={[styles.buttonContainer]}>
             <SecondaryButton name='changePassword' type='submit' text='Change Password'/>
           </div>
         </div>
-      </LayoutShell>
+      </PageLayout>
     );
   }
 });
@@ -25,7 +25,7 @@ var AccountPage = React.createClass({
 AccountPage = Radium(AccountPage);
 
 var styles = {
-  buttonStyle: {
+  buttonContainer: {
 
     width: '95%',
 

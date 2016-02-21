@@ -6,19 +6,20 @@ import FormInput from '../form/form-input';
 import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
-var LoginForm = React.createClass({
+var SignupForm = React.createClass({
   getInitialState: function() {
     return {
 
       email: '',
-      password: ''
+      password: '',
+      confirmPassword: '',
     }
   },
 
   handleSubmit: function(e) {
 
-    e.preventDefault();
     console.log('Submitting ',this.state);
+    e.preventDefault();
   },
 
   handleChange: function (e) {
@@ -31,7 +32,7 @@ var LoginForm = React.createClass({
 
   render () {
     return (
-      <div style={[styles.loginForm]}>
+      <div style={[styles.margin]}>
 
         <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
 
@@ -51,12 +52,20 @@ var LoginForm = React.createClass({
               value={this.state.password}/>
           </FormField>
 
-          <PrimaryButton name='loginButton' type='submit' text='Login'/>
+          <FormField>
+            <FormInput
+              name='confirmPassword'
+              type='password'
+              placeholder='Confirm Password'
+              value={this.state.password}/>
+          </FormField>
+
+          <PrimaryButton name='signupButton' type='submit' text='Sign up'/>
 
         </form>
 
-        <a href='/#/signup'>
-          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
+        <a href='/#/login'>
+          <SecondaryButton name='loginButton' type='submit' text='Login'/>
         </a>
 
       </div>
@@ -64,14 +73,14 @@ var LoginForm = React.createClass({
   }
 });
 
-LoginForm = Radium(LoginForm);
+SignupForm = Radium(SignupForm);
 
 var styles = {
-  loginForm: {
+  margin: {
 
     width: '80%',
     margin: '10px auto 0px auto'
   }
 }
 
-export default LoginForm;
+export default SignupForm;

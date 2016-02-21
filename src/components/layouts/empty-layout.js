@@ -3,14 +3,14 @@ import Radium from 'radium';
 
 import TopNav from '../top-nav/top-nav';
 
-var HomeLayout = React.createClass({
+var EmptyLayout = React.createClass({
   render () {
     return (
-      <div style={[styles.page]}>
+      <div style={[styles.fillPage]}>
 
         <TopNav/>
 
-        <div>
+        <div style={[styles.flex]}>
           {this.props.children}
         </div>
 
@@ -20,18 +20,24 @@ var HomeLayout = React.createClass({
   }
 });
 
-HomeLayout = Radium(HomeLayout);
+EmptyLayout = Radium(EmptyLayout);
 
 var styles = {
-  page: {
+  fillPage: {
 
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    backgroundColor: 'rgba(240,240,240)',
+
     position: 'absolute',
     top: 0,
     left: 0,
     bottom: 0,
     right: 0,
+  },
+  flex: {
+    display: 'flex',
+
+    height: '94%',
   }
 }
 
-export default HomeLayout;
+export default EmptyLayout;

@@ -58,39 +58,39 @@
 
 	var _reactRouter2 = _interopRequireDefault(_reactRouter);
 
-	var _routesLanding = __webpack_require__(199);
+	var _routesHome = __webpack_require__(199);
 
-	var _routesLanding2 = _interopRequireDefault(_routesLanding);
+	var _routesHome2 = _interopRequireDefault(_routesHome);
 
 	var _routesLogin = __webpack_require__(220);
 
 	var _routesLogin2 = _interopRequireDefault(_routesLogin);
 
-	var _routesSignup = __webpack_require__(230);
+	var _routesSignup = __webpack_require__(228);
 
 	var _routesSignup2 = _interopRequireDefault(_routesSignup);
 
-	var _routesNewProfile = __webpack_require__(233);
+	var _routesNewProfile = __webpack_require__(231);
 
 	var _routesNewProfile2 = _interopRequireDefault(_routesNewProfile);
 
-	var _routesNotFound = __webpack_require__(236);
+	var _routesNotFound = __webpack_require__(234);
 
 	var _routesNotFound2 = _interopRequireDefault(_routesNotFound);
 
-	var _routesDashboard = __webpack_require__(239);
+	var _routesDashboard = __webpack_require__(237);
 
 	var _routesDashboard2 = _interopRequireDefault(_routesDashboard);
 
-	var _routesAccount = __webpack_require__(244);
+	var _routesAccount = __webpack_require__(242);
 
 	var _routesAccount2 = _interopRequireDefault(_routesAccount);
 
-	var _routesPreAssembledKits = __webpack_require__(247);
+	var _routesPreAssembledKits = __webpack_require__(245);
 
 	var _routesPreAssembledKits2 = _interopRequireDefault(_routesPreAssembledKits);
 
-	var _routesKitBuilder = __webpack_require__(250);
+	var _routesKitBuilder = __webpack_require__(248);
 
 	var _routesKitBuilder2 = _interopRequireDefault(_routesKitBuilder);
 
@@ -112,7 +112,7 @@
 	var routes = _react2['default'].createElement(
 	  Route,
 	  { path: '/', handler: App },
-	  _react2['default'].createElement(Route, { path: 'home', handler: _routesLanding2['default'] }),
+	  _react2['default'].createElement(Route, { path: 'home', handler: _routesHome2['default'] }),
 	  _react2['default'].createElement(Route, { path: 'login', handler: _routesLogin2['default'] }),
 	  _react2['default'].createElement(Route, { path: 'signup', handler: _routesSignup2['default'] }),
 	  _react2['default'].createElement(Route, { path: 'signup/profile', handler: _routesNewProfile2['default'] }),
@@ -23761,22 +23761,22 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesLandingPage = __webpack_require__(200);
+	var _pagesHomePage = __webpack_require__(200);
 
-	var _pagesLandingPage2 = _interopRequireDefault(_pagesLandingPage);
+	var _pagesHomePage2 = _interopRequireDefault(_pagesHomePage);
 
-	var LandingPageRoute = _react2['default'].createClass({
-	  displayName: 'LandingPageRoute',
+	var HomeRoute = _react2['default'].createClass({
+	  displayName: 'HomeRoute',
 
 	  render: function render() {
-	    return _react2['default'].createElement(_pagesLandingPage2['default'], null);
+	    return _react2['default'].createElement(_pagesHomePage2['default'], null);
 	  }
 	});
 
-	exports['default'] = LandingPageRoute;
+	exports['default'] = HomeRoute;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "landing.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "home.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 200 */
@@ -23800,24 +23800,20 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _componentsTopNavTopNav = __webpack_require__(216);
+	var _componentsLayoutsEmptyLayout = __webpack_require__(216);
 
-	var _componentsTopNavTopNav2 = _interopRequireDefault(_componentsTopNavTopNav);
+	var _componentsLayoutsEmptyLayout2 = _interopRequireDefault(_componentsLayoutsEmptyLayout);
 
-	var _componentsLayoutsHomeLayout = __webpack_require__(219);
-
-	var _componentsLayoutsHomeLayout2 = _interopRequireDefault(_componentsLayoutsHomeLayout);
-
-	var LandingPage = _react2['default'].createClass({
-	  displayName: 'LandingPage',
+	var HomePage = _react2['default'].createClass({
+	  displayName: 'HomePage',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsLayoutsHomeLayout2['default'],
+	      _componentsLayoutsEmptyLayout2['default'],
 	      null,
 	      _react2['default'].createElement(
 	        'div',
-	        { style: [styles.text] },
+	        { style: [styles.customFont, styles.spacingTop] },
 	        _react2['default'].createElement(
 	          'font',
 	          { style: [styles.title] },
@@ -23851,19 +23847,21 @@
 	  }
 	});
 
-	LandingPage = (0, _radium2['default'])(LandingPage);
+	HomePage = (0, _radium2['default'])(HomePage);
 
 	var styles = {
-	  text: {
+	  spacingTop: {
+
+	    paddingTop: '20px'
+	  },
+	  customFont: {
 
 	    fontSize: '30px',
 	    fontWeight: 'lighter',
 	    fontFamily: 'sans-serif',
 	    color: 'rgb(215,215,215)',
 	    WebkitFontSmoothing: 'antialiased',
-	    textAlign: 'center',
-
-	    paddingTop: '20px'
+	    textAlign: 'center'
 	  },
 	  title: {
 
@@ -23879,10 +23877,10 @@
 	  }
 	};
 
-	exports['default'] = LandingPage;
+	exports['default'] = HomePage;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "landing-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "home-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 201 */
@@ -25264,11 +25262,79 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _navTitle = __webpack_require__(217);
+	var _topNavTopNav = __webpack_require__(217);
 
-	var _navTitle2 = _interopRequireDefault(_navTitle);
+	var _topNavTopNav2 = _interopRequireDefault(_topNavTopNav);
 
-	var _topNavItem = __webpack_require__(218);
+	var EmptyLayout = _react2['default'].createClass({
+	  displayName: 'EmptyLayout',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { style: [styles.fillPage] },
+	      _react2['default'].createElement(_topNavTopNav2['default'], null),
+	      _react2['default'].createElement(
+	        'div',
+	        { style: [styles.flex] },
+	        this.props.children
+	      )
+	    );
+	  }
+	});
+
+	EmptyLayout = (0, _radium2['default'])(EmptyLayout);
+
+	var styles = {
+	  fillPage: {
+
+	    backgroundColor: 'rgba(240,240,240)',
+
+	    position: 'absolute',
+	    top: 0,
+	    left: 0,
+	    bottom: 0,
+	    right: 0
+	  },
+	  flex: {
+	    display: 'flex',
+
+	    height: '94%'
+	  }
+	};
+
+	exports['default'] = EmptyLayout;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "empty-layout.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _radium = __webpack_require__(201);
+
+	var _radium2 = _interopRequireDefault(_radium);
+
+	var _topNavTitle = __webpack_require__(218);
+
+	var _topNavTitle2 = _interopRequireDefault(_topNavTitle);
+
+	var _topNavItem = __webpack_require__(219);
 
 	var _topNavItem2 = _interopRequireDefault(_topNavItem);
 
@@ -25279,7 +25345,7 @@
 	    return _react2['default'].createElement(
 	      'div',
 	      { style: [styles.navBar] },
-	      _react2['default'].createElement(_navTitle2['default'], { href: '/#/home' }),
+	      _react2['default'].createElement(_topNavTitle2['default'], { href: '/#/home' }),
 	      _react2['default'].createElement(
 	        'div',
 	        { style: [styles.navTabs] },
@@ -25304,7 +25370,7 @@
 	    zIndex: 0,
 	    display: 'flex',
 	    width: '100%',
-	    minHeight: '46px'
+	    height: '6%'
 	  },
 	  navTabs: {
 
@@ -25323,7 +25389,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "top-nav.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -25344,8 +25410,8 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var NavTitle = _react2['default'].createClass({
-	  displayName: 'NavTitle',
+	var TopNavTitle = _react2['default'].createClass({
+	  displayName: 'TopNavTitle',
 
 	  propTypes: {
 	    href: _react2['default'].PropTypes.string.isRequired
@@ -25369,7 +25435,7 @@
 	  }
 	});
 
-	NavTitle = (0, _radium2['default'])(NavTitle);
+	TopNavTitle = (0, _radium2['default'])(TopNavTitle);
 
 	var styles = {
 	  spacing: {
@@ -25396,13 +25462,13 @@
 	  }
 	};
 
-	exports['default'] = NavTitle;
+	exports['default'] = TopNavTitle;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "nav-title.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "top-nav-title.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -25469,68 +25535,6 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "top-nav-item.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 219 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _radium = __webpack_require__(201);
-
-	var _radium2 = _interopRequireDefault(_radium);
-
-	var _topNavTopNav = __webpack_require__(216);
-
-	var _topNavTopNav2 = _interopRequireDefault(_topNavTopNav);
-
-	var HomeLayout = _react2['default'].createClass({
-	  displayName: 'HomeLayout',
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      { style: [styles.page] },
-	      _react2['default'].createElement(_topNavTopNav2['default'], null),
-	      _react2['default'].createElement(
-	        'div',
-	        null,
-	        this.props.children
-	      )
-	    );
-	  }
-	});
-
-	HomeLayout = (0, _radium2['default'])(HomeLayout);
-
-	var styles = {
-	  page: {
-
-	    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-	    position: 'absolute',
-	    top: 0,
-	    left: 0,
-	    bottom: 0,
-	    right: 0
-	  }
-	};
-
-	exports['default'] = HomeLayout;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "home-layout.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
 /* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -25583,34 +25587,29 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsBackgroundsLoginBackground = __webpack_require__(222);
+	var _componentsLayoutsEmptyLayout = __webpack_require__(216);
 
-	var _componentsBackgroundsLoginBackground2 = _interopRequireDefault(_componentsBackgroundsLoginBackground);
+	var _componentsLayoutsEmptyLayout2 = _interopRequireDefault(_componentsLayoutsEmptyLayout);
 
-	var _componentsBackgroundsOpaqueBox = __webpack_require__(223);
+	var _componentsContainersOpaqueContainer = __webpack_require__(222);
 
-	var _componentsBackgroundsOpaqueBox2 = _interopRequireDefault(_componentsBackgroundsOpaqueBox);
+	var _componentsContainersOpaqueContainer2 = _interopRequireDefault(_componentsContainersOpaqueContainer);
 
-	var _componentsFormFormTitle = __webpack_require__(224);
+	var _componentsFormLoginForm = __webpack_require__(223);
 
-	var _componentsFormFormTitle2 = _interopRequireDefault(_componentsFormFormTitle);
-
-	var _componentsPageFormsLoginForm = __webpack_require__(225);
-
-	var _componentsPageFormsLoginForm2 = _interopRequireDefault(_componentsPageFormsLoginForm);
+	var _componentsFormLoginForm2 = _interopRequireDefault(_componentsFormLoginForm);
 
 	var LoginPage = _react2['default'].createClass({
 	  displayName: 'LoginPage',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsBackgroundsLoginBackground2['default'],
+	      _componentsLayoutsEmptyLayout2['default'],
 	      null,
 	      _react2['default'].createElement(
-	        _componentsBackgroundsOpaqueBox2['default'],
+	        _componentsContainersOpaqueContainer2['default'],
 	        null,
-	        _react2['default'].createElement(_componentsFormFormTitle2['default'], null),
-	        _react2['default'].createElement(_componentsPageFormsLoginForm2['default'], null)
+	        _react2['default'].createElement(_componentsFormLoginForm2['default'], null)
 	      )
 	    );
 	  }
@@ -25643,39 +25642,36 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var LoginBackground = _react2['default'].createClass({
-	  displayName: 'LoginBackground',
+	var OpaqueContainer = _react2['default'].createClass({
+	  displayName: 'OpaqueContainer',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      { style: [styles.loginBackground] },
+	      { style: [styles.opaqueContainer] },
 	      this.props.children
 	    );
 	  }
 	});
 
-	LoginBackground = (0, _radium2['default'])(LoginBackground);
+	OpaqueContainer = (0, _radium2['default'])(OpaqueContainer);
 
 	var styles = {
-	  loginBackground: {
+	  opaqueContainer: {
 
-	    display: 'flex',
-	    backgroundColor: 'rgb(240,240,240)',
+	    backgroundColor: 'rgba(10, 10, 10, 0.9)',
+	    width: '350px',
 
-	    backgroundSize: 'cover',
-	    position: 'absolute',
-	    top: 0,
-	    left: 0,
-	    bottom: 0,
-	    right: 0
+	    padding: '30px',
+	    borderRadius: '5px',
+	    margin: 'auto auto auto auto'
 	  }
 	};
 
-	exports['default'] = LoginBackground;
+	exports['default'] = OpaqueContainer;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "login-background.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "opaque-container.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 223 */
@@ -25699,141 +25695,19 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var OpaqueBox = _react2['default'].createClass({
-	  displayName: 'OpaqueBox',
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      { style: [styles.opaqueBox] },
-	      this.props.children
-	    );
-	  }
-	});
-
-	OpaqueBox = (0, _radium2['default'])(OpaqueBox);
-
-	var styles = {
-	  opaqueBox: {
-
-	    backgroundColor: 'rgba(10, 10, 10, 0.9)',
-
-	    padding: '30px',
-	    borderRadius: '5px',
-	    margin: 'auto auto auto auto'
-	  }
-	};
-
-	exports['default'] = OpaqueBox;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "opaque-box.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 224 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _radium = __webpack_require__(201);
-
-	var _radium2 = _interopRequireDefault(_radium);
-
-	var FormTitle = _react2['default'].createClass({
-	  displayName: 'FormTitle',
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'h1',
-	      { style: [styles.titleFont] },
-	      _react2['default'].createElement(
-	        'font',
-	        null,
-	        'OmniWolf'
-	      ),
-	      _react2['default'].createElement(
-	        'font',
-	        { style: [styles.blue] },
-	        'DSN'
-	      )
-	    );
-	  }
-	});
-
-	FormTitle = (0, _radium2['default'])(FormTitle);
-
-	var styles = {
-	  titleFont: {
-
-	    fontSize: '60px',
-	    fontWeight: 'lighter',
-	    fontFamily: 'sans-serif',
-	    color: 'rgb(215, 215, 215)',
-
-	    textAlign: 'center',
-	    margin: '0px 10px 20px 10px',
-	    WebkitFontSmoothing: 'antialiased',
-
-	    cursor: 'default'
-	  },
-	  blue: {
-
-	    color: 'rgb(72, 124, 236)'
-	  }
-	};
-
-	exports['default'] = FormTitle;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "form-title.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 225 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _radium = __webpack_require__(201);
-
-	var _radium2 = _interopRequireDefault(_radium);
-
-	var _formFormField = __webpack_require__(226);
+	var _formFormField = __webpack_require__(224);
 
 	var _formFormField2 = _interopRequireDefault(_formFormField);
 
-	var _formFormInput = __webpack_require__(227);
+	var _formFormInput = __webpack_require__(225);
 
 	var _formFormInput2 = _interopRequireDefault(_formFormInput);
 
-	var _buttonsPrimaryButton = __webpack_require__(228);
+	var _buttonsPrimaryButton = __webpack_require__(226);
 
 	var _buttonsPrimaryButton2 = _interopRequireDefault(_buttonsPrimaryButton);
 
-	var _buttonsSecondaryButton = __webpack_require__(229);
+	var _buttonsSecondaryButton = __webpack_require__(227);
 
 	var _buttonsSecondaryButton2 = _interopRequireDefault(_buttonsSecondaryButton);
 
@@ -25865,7 +25739,7 @@
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      { style: [styles.loginForm] },
+	      { style: [styles.margin] },
 	      _react2['default'].createElement(
 	        'form',
 	        { onSubmit: this.handleSubmit, onChange: this.handleChange },
@@ -25901,7 +25775,7 @@
 	LoginForm = (0, _radium2['default'])(LoginForm);
 
 	var styles = {
-	  loginForm: {
+	  margin: {
 
 	    width: '80%',
 	    margin: '10px auto 0px auto'
@@ -25914,7 +25788,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "login-form.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 226 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -25963,7 +25837,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "form-field.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 227 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26041,7 +25915,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "form-input.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 228 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26124,7 +25998,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "primary-button.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 229 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26212,7 +26086,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "secondary-button.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 230 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26229,7 +26103,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesSignupPage = __webpack_require__(231);
+	var _pagesSignupPage = __webpack_require__(229);
 
 	var _pagesSignupPage2 = _interopRequireDefault(_pagesSignupPage);
 
@@ -26247,7 +26121,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "signup.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 231 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26264,34 +26138,29 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsBackgroundsLoginBackground = __webpack_require__(222);
+	var _componentsLayoutsEmptyLayout = __webpack_require__(216);
 
-	var _componentsBackgroundsLoginBackground2 = _interopRequireDefault(_componentsBackgroundsLoginBackground);
+	var _componentsLayoutsEmptyLayout2 = _interopRequireDefault(_componentsLayoutsEmptyLayout);
 
-	var _componentsBackgroundsOpaqueBox = __webpack_require__(223);
+	var _componentsContainersOpaqueContainer = __webpack_require__(222);
 
-	var _componentsBackgroundsOpaqueBox2 = _interopRequireDefault(_componentsBackgroundsOpaqueBox);
+	var _componentsContainersOpaqueContainer2 = _interopRequireDefault(_componentsContainersOpaqueContainer);
 
-	var _componentsFormFormTitle = __webpack_require__(224);
+	var _componentsFormSignupForm = __webpack_require__(230);
 
-	var _componentsFormFormTitle2 = _interopRequireDefault(_componentsFormFormTitle);
-
-	var _componentsPageFormsSignupForm = __webpack_require__(232);
-
-	var _componentsPageFormsSignupForm2 = _interopRequireDefault(_componentsPageFormsSignupForm);
+	var _componentsFormSignupForm2 = _interopRequireDefault(_componentsFormSignupForm);
 
 	var SignupPage = _react2['default'].createClass({
 	  displayName: 'SignupPage',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsBackgroundsLoginBackground2['default'],
+	      _componentsLayoutsEmptyLayout2['default'],
 	      null,
 	      _react2['default'].createElement(
-	        _componentsBackgroundsOpaqueBox2['default'],
+	        _componentsContainersOpaqueContainer2['default'],
 	        null,
-	        _react2['default'].createElement(_componentsFormFormTitle2['default'], null),
-	        _react2['default'].createElement(_componentsPageFormsSignupForm2['default'], null)
+	        _react2['default'].createElement(_componentsFormSignupForm2['default'], null)
 	      )
 	    );
 	  }
@@ -26303,7 +26172,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "signup-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 232 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26324,19 +26193,19 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _formFormField = __webpack_require__(226);
+	var _formFormField = __webpack_require__(224);
 
 	var _formFormField2 = _interopRequireDefault(_formFormField);
 
-	var _formFormInput = __webpack_require__(227);
+	var _formFormInput = __webpack_require__(225);
 
 	var _formFormInput2 = _interopRequireDefault(_formFormInput);
 
-	var _buttonsPrimaryButton = __webpack_require__(228);
+	var _buttonsPrimaryButton = __webpack_require__(226);
 
 	var _buttonsPrimaryButton2 = _interopRequireDefault(_buttonsPrimaryButton);
 
-	var _buttonsSecondaryButton = __webpack_require__(229);
+	var _buttonsSecondaryButton = __webpack_require__(227);
 
 	var _buttonsSecondaryButton2 = _interopRequireDefault(_buttonsSecondaryButton);
 
@@ -26369,7 +26238,7 @@
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      { style: [styles.signupForm] },
+	      { style: [styles.margin] },
 	      _react2['default'].createElement(
 	        'form',
 	        { onSubmit: this.handleSubmit, onChange: this.handleChange },
@@ -26414,7 +26283,7 @@
 	SignupForm = (0, _radium2['default'])(SignupForm);
 
 	var styles = {
-	  signupForm: {
+	  margin: {
 
 	    width: '80%',
 	    margin: '10px auto 0px auto'
@@ -26425,6 +26294,92 @@
 	module.exports = exports['default'];
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "signup-form.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _pagesNewProfilePage = __webpack_require__(232);
+
+	var _pagesNewProfilePage2 = _interopRequireDefault(_pagesNewProfilePage);
+
+	var NewProfileRoute = _react2['default'].createClass({
+	  displayName: 'NewProfileRoute',
+
+	  render: function render() {
+	    return _react2['default'].createElement(_pagesNewProfilePage2['default'], null);
+	  }
+	});
+
+	exports['default'] = NewProfileRoute;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "new-profile.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _componentsLayoutsEmptyLayout = __webpack_require__(216);
+
+	var _componentsLayoutsEmptyLayout2 = _interopRequireDefault(_componentsLayoutsEmptyLayout);
+
+	var _componentsContainersOpaqueContainer = __webpack_require__(222);
+
+	var _componentsContainersOpaqueContainer2 = _interopRequireDefault(_componentsContainersOpaqueContainer);
+
+	var _componentsFormNewProfileForm = __webpack_require__(233);
+
+	var _componentsFormNewProfileForm2 = _interopRequireDefault(_componentsFormNewProfileForm);
+
+	var NewProfilePage = _react2['default'].createClass({
+	  displayName: 'NewProfilePage',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      _componentsLayoutsEmptyLayout2['default'],
+	      null,
+	      _react2['default'].createElement(
+	        _componentsContainersOpaqueContainer2['default'],
+	        null,
+	        _react2['default'].createElement(_componentsFormNewProfileForm2['default'], null)
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = NewProfilePage;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "new-profile-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 233 */
@@ -26444,110 +26399,19 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesNewProfilePage = __webpack_require__(234);
-
-	var _pagesNewProfilePage2 = _interopRequireDefault(_pagesNewProfilePage);
-
-	var NewProfileRoute = _react2['default'].createClass({
-	  displayName: 'NewProfileRoute',
-
-	  render: function render() {
-	    return _react2['default'].createElement(_pagesNewProfilePage2['default'], null);
-	  }
-	});
-
-	exports['default'] = NewProfileRoute;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "new-profile.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 234 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _componentsBackgroundsLoginBackground = __webpack_require__(222);
-
-	var _componentsBackgroundsLoginBackground2 = _interopRequireDefault(_componentsBackgroundsLoginBackground);
-
-	var _componentsBackgroundsOpaqueBox = __webpack_require__(223);
-
-	var _componentsBackgroundsOpaqueBox2 = _interopRequireDefault(_componentsBackgroundsOpaqueBox);
-
-	var _componentsFormFormTitle = __webpack_require__(224);
-
-	var _componentsFormFormTitle2 = _interopRequireDefault(_componentsFormFormTitle);
-
-	var _componentsPageFormsNewProfileForm = __webpack_require__(235);
-
-	var _componentsPageFormsNewProfileForm2 = _interopRequireDefault(_componentsPageFormsNewProfileForm);
-
-	var NewProfilePage = _react2['default'].createClass({
-	  displayName: 'NewProfilePage',
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      _componentsBackgroundsLoginBackground2['default'],
-	      null,
-	      _react2['default'].createElement(
-	        _componentsBackgroundsOpaqueBox2['default'],
-	        null,
-	        _react2['default'].createElement(_componentsFormFormTitle2['default'], null),
-	        _react2['default'].createElement(_componentsPageFormsNewProfileForm2['default'], null)
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = NewProfilePage;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "new-profile-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _formFormField = __webpack_require__(226);
+	var _formFormField = __webpack_require__(224);
 
 	var _formFormField2 = _interopRequireDefault(_formFormField);
 
-	var _formFormInput = __webpack_require__(227);
+	var _formFormInput = __webpack_require__(225);
 
 	var _formFormInput2 = _interopRequireDefault(_formFormInput);
 
-	var _buttonsPrimaryButton = __webpack_require__(228);
+	var _buttonsPrimaryButton = __webpack_require__(226);
 
 	var _buttonsPrimaryButton2 = _interopRequireDefault(_buttonsPrimaryButton);
 
-	var _buttonsSecondaryButton = __webpack_require__(229);
+	var _buttonsSecondaryButton = __webpack_require__(227);
 
 	var _buttonsSecondaryButton2 = _interopRequireDefault(_buttonsSecondaryButton);
 
@@ -26608,7 +26472,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "new-profile-form.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 236 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26625,7 +26489,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesNotFoundPage = __webpack_require__(237);
+	var _pagesNotFoundPage = __webpack_require__(235);
 
 	var _pagesNotFoundPage2 = _interopRequireDefault(_pagesNotFoundPage);
 
@@ -26643,7 +26507,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "not-found.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 237 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26664,16 +26528,16 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _componentsBackgroundsBlankBackground = __webpack_require__(238);
+	var _componentsContainersBlankContainer = __webpack_require__(236);
 
-	var _componentsBackgroundsBlankBackground2 = _interopRequireDefault(_componentsBackgroundsBlankBackground);
+	var _componentsContainersBlankContainer2 = _interopRequireDefault(_componentsContainersBlankContainer);
 
 	var NotFoundPage = _react2['default'].createClass({
 	  displayName: 'NotFoundPage',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsBackgroundsBlankBackground2['default'],
+	      _componentsContainersBlankContainer2['default'],
 	      null,
 	      _react2['default'].createElement(
 	        'div',
@@ -26710,6 +26574,98 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "not-found-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _radium = __webpack_require__(201);
+
+	var _radium2 = _interopRequireDefault(_radium);
+
+	var BlankContainer = _react2['default'].createClass({
+	  displayName: 'BlankContainer',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { style: [styles.blankContainer] },
+	      this.props.children
+	    );
+	  }
+	});
+
+	BlankContainer = (0, _radium2['default'])(BlankContainer);
+
+	var styles = {
+	  blankContainer: {
+
+	    display: 'flex',
+	    flexDirection: 'column',
+	    backgroundColor: 'rgb(240,240,240)',
+
+	    backgroundSize: 'cover',
+	    position: 'absolute',
+	    top: 0,
+	    left: 0,
+	    bottom: 0,
+	    right: 0
+	  }
+	};
+
+	exports['default'] = BlankContainer;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "blank-container.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _pagesDashboardPage = __webpack_require__(238);
+
+	var _pagesDashboardPage2 = _interopRequireDefault(_pagesDashboardPage);
+
+	var DashboardRoute = _react2['default'].createClass({
+	  displayName: 'DashboardRoute',
+
+	  render: function render() {
+	    return _react2['default'].createElement(_pagesDashboardPage2['default'], null);
+	  }
+	});
+
+	exports['default'] = DashboardRoute;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "dashboard.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
 /* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26731,40 +26687,50 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var BlankBackground = _react2['default'].createClass({
-	  displayName: 'BlankBackground',
+	var _componentsLayoutsPageLayout = __webpack_require__(239);
+
+	var _componentsLayoutsPageLayout2 = _interopRequireDefault(_componentsLayoutsPageLayout);
+
+	var _componentsKitRegisteredItem = __webpack_require__(241);
+
+	var _componentsKitRegisteredItem2 = _interopRequireDefault(_componentsKitRegisteredItem);
+
+	var _componentsButtonsPrimaryButton = __webpack_require__(226);
+
+	var _componentsButtonsPrimaryButton2 = _interopRequireDefault(_componentsButtonsPrimaryButton);
+
+	var DashboardPage = _react2['default'].createClass({
+	  displayName: 'DashboardPage',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      'div',
-	      { style: [styles.blankBackground] },
-	      this.props.children
+	      _componentsLayoutsPageLayout2['default'],
+	      null,
+	      _react2['default'].createElement(_componentsKitRegisteredItem2['default'], { name: 'Baby Monitor' }),
+	      _react2['default'].createElement(
+	        'div',
+	        { style: [styles.buttonContainer] },
+	        _react2['default'].createElement(_componentsButtonsPrimaryButton2['default'], { name: 'registerDevice', type: 'submit', text: 'Register New Device' })
+	      )
 	    );
 	  }
 	});
 
-	BlankBackground = (0, _radium2['default'])(BlankBackground);
+	DashboardPage = (0, _radium2['default'])(DashboardPage);
 
 	var styles = {
-	  blankBackground: {
+	  buttonContainer: {
 
-	    display: 'flex',
-	    flexDirection: 'column',
-	    backgroundColor: 'rgb(240,240,240)',
+	    width: '94%',
 
-	    backgroundSize: 'cover',
-	    position: 'absolute',
-	    top: 0,
-	    left: 0,
-	    bottom: 0,
-	    right: 0
+	    margin: '15px auto 0px auto'
 	  }
 	};
 
-	exports['default'] = BlankBackground;
+	exports['default'] = DashboardPage;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "blank-background.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "dashboard-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 239 */
@@ -26784,22 +26750,39 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesDashboardPage = __webpack_require__(240);
+	var _containersBlankContainer = __webpack_require__(236);
 
-	var _pagesDashboardPage2 = _interopRequireDefault(_pagesDashboardPage);
+	var _containersBlankContainer2 = _interopRequireDefault(_containersBlankContainer);
 
-	var DashboardRoute = _react2['default'].createClass({
-	  displayName: 'DashboardRoute',
+	var _topNavTopNav = __webpack_require__(217);
+
+	var _topNavTopNav2 = _interopRequireDefault(_topNavTopNav);
+
+	var _containersPaperContainer = __webpack_require__(240);
+
+	var _containersPaperContainer2 = _interopRequireDefault(_containersPaperContainer);
+
+	var PageLayout = _react2['default'].createClass({
+	  displayName: 'PageLayout',
 
 	  render: function render() {
-	    return _react2['default'].createElement(_pagesDashboardPage2['default'], null);
+	    return _react2['default'].createElement(
+	      _containersBlankContainer2['default'],
+	      null,
+	      _react2['default'].createElement(_topNavTopNav2['default'], null),
+	      _react2['default'].createElement(
+	        _containersPaperContainer2['default'],
+	        null,
+	        this.props.children
+	      )
+	    );
 	  }
 	});
 
-	exports['default'] = DashboardRoute;
+	exports['default'] = PageLayout;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "dashboard.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "page-layout.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 240 */
@@ -26823,132 +26806,13 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _componentsLayoutsLayoutShell = __webpack_require__(241);
-
-	var _componentsLayoutsLayoutShell2 = _interopRequireDefault(_componentsLayoutsLayoutShell);
-
-	var _componentsKitRegisteredDevice = __webpack_require__(243);
-
-	var _componentsKitRegisteredDevice2 = _interopRequireDefault(_componentsKitRegisteredDevice);
-
-	var _componentsButtonsPrimaryButton = __webpack_require__(228);
-
-	var _componentsButtonsPrimaryButton2 = _interopRequireDefault(_componentsButtonsPrimaryButton);
-
-	var DashboardPage = _react2['default'].createClass({
-	  displayName: 'DashboardPage',
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      _componentsLayoutsLayoutShell2['default'],
-	      null,
-	      _react2['default'].createElement(_componentsKitRegisteredDevice2['default'], { name: 'Baby Monitor' }),
-	      _react2['default'].createElement(
-	        'div',
-	        { style: [styles.buttonStyle] },
-	        _react2['default'].createElement(_componentsButtonsPrimaryButton2['default'], { name: 'registerDevice', type: 'submit', text: 'Register New Device' })
-	      )
-	    );
-	  }
-	});
-
-	DashboardPage = (0, _radium2['default'])(DashboardPage);
-
-	var styles = {
-	  buttonStyle: {
-
-	    width: '94%',
-
-	    margin: '15px auto 0px auto'
-	  }
-	};
-
-	exports['default'] = DashboardPage;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "dashboard-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _backgroundsBlankBackground = __webpack_require__(238);
-
-	var _backgroundsBlankBackground2 = _interopRequireDefault(_backgroundsBlankBackground);
-
-	var _topNavTopNav = __webpack_require__(216);
-
-	var _topNavTopNav2 = _interopRequireDefault(_topNavTopNav);
-
-	var _backgroundsMiddleSection = __webpack_require__(242);
-
-	var _backgroundsMiddleSection2 = _interopRequireDefault(_backgroundsMiddleSection);
-
-	var LayoutShell = _react2['default'].createClass({
-	  displayName: 'LayoutShell',
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      _backgroundsBlankBackground2['default'],
-	      null,
-	      _react2['default'].createElement(_topNavTopNav2['default'], null),
-	      _react2['default'].createElement(
-	        _backgroundsMiddleSection2['default'],
-	        null,
-	        this.props.children
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = LayoutShell;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "layout-shell.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _radium = __webpack_require__(201);
-
-	var _radium2 = _interopRequireDefault(_radium);
-
-	var MiddleSection = _react2['default'].createClass({
-	  displayName: 'MiddleSection',
+	var PaperContainer = _react2['default'].createClass({
+	  displayName: 'PaperContainer',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      { style: [styles.middleSection] },
+	      { style: [styles.paper] },
 	      _react2['default'].createElement(
 	        'div',
 	        { style: [styles.hiddenScrollbar] },
@@ -26958,10 +26822,10 @@
 	  }
 	});
 
-	MiddleSection = (0, _radium2['default'])(MiddleSection);
+	PaperContainer = (0, _radium2['default'])(PaperContainer);
 
 	var styles = {
-	  middleSection: {
+	  paper: {
 
 	    backgroundColor: 'rgb(240,240,240)',
 	    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
@@ -26983,13 +26847,13 @@
 	  }
 	};
 
-	exports['default'] = MiddleSection;
+	exports['default'] = PaperContainer;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "middle-section.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "paper-container.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 243 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27010,12 +26874,12 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _buttonsSecondaryButton = __webpack_require__(229);
+	var _buttonsSecondaryButton = __webpack_require__(227);
 
 	var _buttonsSecondaryButton2 = _interopRequireDefault(_buttonsSecondaryButton);
 
-	var RegisteredDevice = _react2['default'].createClass({
-	  displayName: 'RegisteredDevice',
+	var RegisteredItem = _react2['default'].createClass({
+	  displayName: 'RegisteredItem',
 
 	  mixins: [ReactFireMixin],
 
@@ -27102,7 +26966,7 @@
 	  }
 	});
 
-	RegisteredDevice = (0, _radium2['default'])(RegisteredDevice);
+	RegisteredItem = (0, _radium2['default'])(RegisteredItem);
 
 	var styles = {
 	  registeredDeviceStyle: {
@@ -27162,13 +27026,13 @@
 	  }
 	};
 
-	exports['default'] = RegisteredDevice;
+	exports['default'] = RegisteredItem;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "registered-device.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "registered-item.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 244 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27185,7 +27049,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesAccountPage = __webpack_require__(245);
+	var _pagesAccountPage = __webpack_require__(243);
 
 	var _pagesAccountPage2 = _interopRequireDefault(_pagesAccountPage);
 
@@ -27203,7 +27067,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "account.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 245 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27224,15 +27088,15 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _componentsLayoutsLayoutShell = __webpack_require__(241);
+	var _componentsLayoutsPageLayout = __webpack_require__(239);
 
-	var _componentsLayoutsLayoutShell2 = _interopRequireDefault(_componentsLayoutsLayoutShell);
+	var _componentsLayoutsPageLayout2 = _interopRequireDefault(_componentsLayoutsPageLayout);
 
-	var _componentsPageFormsAccountField = __webpack_require__(246);
+	var _componentsFormAccountForm = __webpack_require__(244);
 
-	var _componentsPageFormsAccountField2 = _interopRequireDefault(_componentsPageFormsAccountField);
+	var _componentsFormAccountForm2 = _interopRequireDefault(_componentsFormAccountForm);
 
-	var _componentsButtonsSecondaryButton = __webpack_require__(229);
+	var _componentsButtonsSecondaryButton = __webpack_require__(227);
 
 	var _componentsButtonsSecondaryButton2 = _interopRequireDefault(_componentsButtonsSecondaryButton);
 
@@ -27241,16 +27105,16 @@
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsLayoutsLayoutShell2['default'],
+	      _componentsLayoutsPageLayout2['default'],
 	      null,
 	      _react2['default'].createElement(
 	        'div',
 	        { style: [styles.accountCard] },
-	        _react2['default'].createElement(_componentsPageFormsAccountField2['default'], { title: 'Full Name', value: 'Andrew Steinheiser' }),
-	        _react2['default'].createElement(_componentsPageFormsAccountField2['default'], { title: 'Email', value: 'andrew@octoblu.com' }),
+	        _react2['default'].createElement(_componentsFormAccountForm2['default'], { title: 'Full Name', value: 'Andrew Steinheiser' }),
+	        _react2['default'].createElement(_componentsFormAccountForm2['default'], { title: 'Email', value: 'andrew@octoblu.com' }),
 	        _react2['default'].createElement(
 	          'div',
-	          { style: [styles.buttonStyle] },
+	          { style: [styles.buttonContainer] },
 	          _react2['default'].createElement(_componentsButtonsSecondaryButton2['default'], { name: 'changePassword', type: 'submit', text: 'Change Password' })
 	        )
 	      )
@@ -27261,7 +27125,7 @@
 	AccountPage = (0, _radium2['default'])(AccountPage);
 
 	var styles = {
-	  buttonStyle: {
+	  buttonContainer: {
 
 	    width: '95%',
 
@@ -27285,7 +27149,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "account-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 246 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27306,8 +27170,8 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var AccountField = _react2['default'].createClass({
-	  displayName: 'AccountField',
+	var AccountForm = _react2['default'].createClass({
+	  displayName: 'AccountForm',
 
 	  propTypes: {
 
@@ -27333,7 +27197,7 @@
 	  }
 	});
 
-	AccountField = (0, _radium2['default'])(AccountField);
+	AccountForm = (0, _radium2['default'])(AccountForm);
 
 	var styles = {
 	  paddingTop: {
@@ -27362,13 +27226,13 @@
 	  }
 	};
 
-	exports['default'] = AccountField;
+	exports['default'] = AccountForm;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "account-field.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "account-form.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 247 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27385,7 +27249,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesPreAssembledKitsPage = __webpack_require__(248);
+	var _pagesPreAssembledKitsPage = __webpack_require__(246);
 
 	var _pagesPreAssembledKitsPage2 = _interopRequireDefault(_pagesPreAssembledKitsPage);
 
@@ -27403,7 +27267,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "pre-assembled-kits.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 248 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27424,11 +27288,11 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _componentsLayoutsLayoutShell = __webpack_require__(241);
+	var _componentsLayoutsPageLayout = __webpack_require__(239);
 
-	var _componentsLayoutsLayoutShell2 = _interopRequireDefault(_componentsLayoutsLayoutShell);
+	var _componentsLayoutsPageLayout2 = _interopRequireDefault(_componentsLayoutsPageLayout);
 
-	var _componentsKitKitItem = __webpack_require__(249);
+	var _componentsKitKitItem = __webpack_require__(247);
 
 	var _componentsKitKitItem2 = _interopRequireDefault(_componentsKitKitItem);
 
@@ -27437,7 +27301,7 @@
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsLayoutsLayoutShell2['default'],
+	      _componentsLayoutsPageLayout2['default'],
 	      null,
 	      _react2['default'].createElement(_componentsKitKitItem2['default'], {
 	        img: 'images/baby-monitor.jpg',
@@ -27466,7 +27330,7 @@
 	        price: '29.99' }),
 	      _react2['default'].createElement(
 	        'div',
-	        { style: [styles.bullshit] },
+	        { style: [styles.spacing] },
 	        '.'
 	      )
 	    );
@@ -27476,7 +27340,7 @@
 	PreAssembledKitsPage = (0, _radium2['default'])(PreAssembledKitsPage);
 
 	var styles = {
-	  bullshit: {
+	  spacing: {
 
 	    height: '50px'
 	  }
@@ -27488,7 +27352,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "pre-assembled-kits-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 249 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27509,7 +27373,7 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _buttonsSecondaryButton = __webpack_require__(229);
+	var _buttonsSecondaryButton = __webpack_require__(227);
 
 	var _buttonsSecondaryButton2 = _interopRequireDefault(_buttonsSecondaryButton);
 
@@ -27642,7 +27506,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "kit-item.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 250 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27659,7 +27523,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pagesKitBuilderPage = __webpack_require__(251);
+	var _pagesKitBuilderPage = __webpack_require__(249);
 
 	var _pagesKitBuilderPage2 = _interopRequireDefault(_pagesKitBuilderPage);
 
@@ -27677,7 +27541,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "kit-builder.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 251 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27698,11 +27562,11 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _componentsLayoutsLayoutShell = __webpack_require__(241);
+	var _componentsLayoutsPageLayout = __webpack_require__(239);
 
-	var _componentsLayoutsLayoutShell2 = _interopRequireDefault(_componentsLayoutsLayoutShell);
+	var _componentsLayoutsPageLayout2 = _interopRequireDefault(_componentsLayoutsPageLayout);
 
-	var _componentsKitSensorItem = __webpack_require__(252);
+	var _componentsKitSensorItem = __webpack_require__(250);
 
 	var _componentsKitSensorItem2 = _interopRequireDefault(_componentsKitSensorItem);
 
@@ -27711,7 +27575,7 @@
 
 	  render: function render() {
 	    return _react2['default'].createElement(
-	      _componentsLayoutsLayoutShell2['default'],
+	      _componentsLayoutsPageLayout2['default'],
 	      null,
 	      _react2['default'].createElement(_componentsKitSensorItem2['default'], {
 	        img: 'images/flame-sensor.jpg',
@@ -27740,7 +27604,7 @@
 	        price: '2.99' }),
 	      _react2['default'].createElement(
 	        'div',
-	        { style: [styles.bullshit] },
+	        { style: [styles.spacing] },
 	        '.'
 	      )
 	    );
@@ -27750,7 +27614,7 @@
 	KitBuilderPage = (0, _radium2['default'])(KitBuilderPage);
 
 	var styles = {
-	  bullshit: {
+	  spacing: {
 
 	    height: '50px'
 	  }
@@ -27762,7 +27626,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "kit-builder-page.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 252 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/Andrew/Projects/OmniWolf-DSN/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27783,7 +27647,7 @@
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var _buttonsSecondaryButton = __webpack_require__(229);
+	var _buttonsSecondaryButton = __webpack_require__(227);
 
 	var _buttonsSecondaryButton2 = _interopRequireDefault(_buttonsSecondaryButton);
 

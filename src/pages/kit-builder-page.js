@@ -1,13 +1,13 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/layout-shell';
+import PageLayout from '../components/layouts/page-layout';
 import SensorItem from '../components/kit/sensor-item';
 
 var KitBuilderPage = React.createClass({
   render () {
     return (
-      <LayoutShell>
+      <PageLayout>
         <SensorItem
           img='images/flame-sensor.jpg'
           name='Flame Sensor'
@@ -33,8 +33,8 @@ var KitBuilderPage = React.createClass({
           name='Carbon Monoxide Sensor'
           description='This is a digital sensor that can notify you of carbon monoxide leaks, great for garages.'
           price='2.99'/>
-        <div style={[styles.bullshit]}>.</div>
-      </LayoutShell>
+        <div style={[styles.spacing]}>.</div>
+      </PageLayout>
     );
   }
 });
@@ -42,7 +42,7 @@ var KitBuilderPage = React.createClass({
 KitBuilderPage = Radium(KitBuilderPage);
 
 var styles = {
-  bullshit: {
+  spacing: {
 
     height: '50px'
   }

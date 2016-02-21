@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-import NavTitle from './nav-title'
+import TopNavTitle from './top-nav-title'
 import TopNavItem from './top-nav-item'
 
 var TopNav = React.createClass({
@@ -9,7 +9,7 @@ var TopNav = React.createClass({
     return (
       <div style={[styles.navBar]}>
 
-        <NavTitle href='/#/home'/>
+        <TopNavTitle href='/#/home'/>
 
         <div style={[styles.navTabs]}>
           <TopNavItem href='/#/pre-assembled-kits' text='Pre-Assembled Kits'/>
@@ -35,7 +35,7 @@ var styles = {
     zIndex: 0,
     display: 'flex',
     width: '100%',
-    minHeight: '46px',
+    height: '6%',
   },
   navTabs: {
 

@@ -1,22 +1,23 @@
 import React from 'react';
 import Radium from 'radium';
 
-var LoginBackground = React.createClass({
+var BlankContainer = React.createClass({
   render () {
     return (
-      <div style={[styles.loginBackground]}>
+      <div style={[styles.blankContainer]}>
         {this.props.children}
       </div>
     );
   }
 });
 
-LoginBackground = Radium(LoginBackground);
+BlankContainer = Radium(BlankContainer);
 
 var styles = {
-  loginBackground: {
+  blankContainer: {
 
     display: 'flex',
+    flexDirection: 'column',
     backgroundColor: 'rgb(240,240,240)',
 
     backgroundSize: 'cover',
@@ -28,4 +29,4 @@ var styles = {
   }
 }
 
-export default LoginBackground;
+export default BlankContainer;

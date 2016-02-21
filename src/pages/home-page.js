@@ -1,14 +1,13 @@
 import React from 'react';
 import Radium from 'radium';
 
-import TopNav from '../components/top-nav/top-nav';
-import HomeLayout from '../components/layouts/home-layout';
+import EmptyLayout from '../components/layouts/empty-layout';
 
-var LandingPage = React.createClass({
+var HomePage = React.createClass({
   render () {
     return (
-      <HomeLayout>
-        <div style={[styles.text]}>
+      <EmptyLayout>
+        <div style={[styles.customFont, styles.spacingTop]}>
           <font style={[styles.title]}>OmniWolf</font>
           <font style={[styles.title, styles.blue]}>DSN</font>
           <br/>
@@ -18,15 +17,19 @@ var LandingPage = React.createClass({
           <br/>
           <font>Currently under development...</font>
         </div>
-      </HomeLayout>
+      </EmptyLayout>
     );
   }
 });
 
-LandingPage = Radium(LandingPage);
+HomePage = Radium(HomePage);
 
 var styles = {
-  text: {
+  spacingTop: {
+
+    paddingTop: '20px',
+  },
+  customFont: {
 
     fontSize: '30px',
     fontWeight: 'lighter',
@@ -34,8 +37,6 @@ var styles = {
     color: 'rgb(215,215,215)',
     WebkitFontSmoothing: 'antialiased',
     textAlign: 'center',
-
-    paddingTop: '20px',
   },
   title: {
 
@@ -51,4 +52,4 @@ var styles = {
   }
 };
 
-export default LandingPage;
+export default HomePage;

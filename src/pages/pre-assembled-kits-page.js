@@ -1,13 +1,13 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/layout-shell';
+import PageLayout from '../components/layouts/page-layout';
 import KitItem from '../components/kit/kit-item';
 
 var PreAssembledKitsPage = React.createClass({
   render () {
     return (
-      <LayoutShell>
+      <PageLayout>
         <KitItem
           img='images/baby-monitor.jpg'
           name='Baby Monitor'
@@ -33,8 +33,8 @@ var PreAssembledKitsPage = React.createClass({
           name='Noise'
           description='This is a noise detector which is great for detecting any sounds.'
           price='29.99'/>
-        <div style={[styles.bullshit]}>.</div>
-      </LayoutShell>
+        <div style={[styles.spacing]}>.</div>
+      </PageLayout>
     );
   }
 });
@@ -42,7 +42,7 @@ var PreAssembledKitsPage = React.createClass({
 PreAssembledKitsPage = Radium(PreAssembledKitsPage);
 
 var styles = {
-  bullshit: {
+  spacing: {
 
     height: '50px'
   }

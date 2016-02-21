@@ -1,18 +1,18 @@
 import React from 'react';
 import Radium from 'radium';
 
-import BlankBackground from '../components/backgrounds/blank-background';
+import BlankContainer from '../components/containers/blank-container';
 
 var NotFoundPage = React.createClass({
   render () {
     return (
-      <BlankBackground>
+      <BlankContainer>
         <div style={[styles.centerText]}>
 
           <font>Page Not Found</font>
 
         </div>
-      </BlankBackground>
+      </BlankContainer>
     );
   }
 });

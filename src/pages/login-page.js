@@ -1,21 +1,19 @@
 import React from 'react';
 
-import LoginBackground from '../components/backgrounds/login-background';
-import OpaqueBox from '../components/backgrounds/opaque-box';
-import FormTitle from '../components/form/form-title';
-import LoginForm from '../components/page-forms/login-form';
+import EmptyLayout from '../components/layouts/empty-layout';
+import OpaqueContainer from '../components/containers/opaque-container';
+import LoginForm from '../components/form/login-form';
 
 var LoginPage = React.createClass({
   render () {
     return (
-      <LoginBackground>
-        <OpaqueBox>
+      <EmptyLayout>
+        <OpaqueContainer>
 
-          <FormTitle />
           <LoginForm />
 
-        </OpaqueBox>
-      </LoginBackground>
+        </OpaqueContainer>
+      </EmptyLayout>
     );
   }
 });

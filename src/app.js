@@ -1,7 +1,7 @@
 import React from 'react';
 import Router from 'react-router';
 
-import LandingPageRoute from './routes/landing';
+import HomePageRoute from './routes/home';
 import LoginRoute from './routes/login';
 import SignupRoute from './routes/signup';
 import NewProfileRoute from './routes/new-profile';
@@ -26,7 +26,7 @@ var App = React.createClass({
 
 var routes = (
   <Route path='/' handler={App}>
-    <Route path='home' handler={LandingPageRoute}/>
+    <Route path='home' handler={HomePageRoute}/>
     <Route path='login' handler={LoginRoute}/>
     <Route path='signup' handler={SignupRoute}/>
     <Route path='signup/profile' handler={NewProfileRoute}/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-var AccountField = React.createClass({
+var AccountForm = React.createClass({
   propTypes: {
 
     title: React.PropTypes.string.isRequired,
@@ -18,7 +18,7 @@ var AccountField = React.createClass({
   }
 });
 
-AccountField = Radium(AccountField);
+AccountForm = Radium(AccountForm);
 
 var styles = {
   paddingTop: {
@@ -47,4 +47,4 @@ var styles = {
   }
 }
 
-export default AccountField;
+export default AccountForm;

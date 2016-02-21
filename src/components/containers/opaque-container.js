@@ -1,22 +1,23 @@
 import React from 'react';
 import Radium from 'radium';
 
-var OpaqueBox = React.createClass({
+var OpaqueContainer = React.createClass({
   render () {
     return (
-      <div style={[styles.opaqueBox]}>
+      <div style={[styles.opaqueContainer]}>
         {this.props.children}
       </div>
     );
   }
 });
 
-OpaqueBox = Radium(OpaqueBox);
+OpaqueContainer = Radium(OpaqueContainer);
 
 var styles = {
-  opaqueBox: {
+  opaqueContainer: {
 
     backgroundColor: 'rgba(10, 10, 10, 0.9)',
+    width: '350px',
 
     padding: '30px',
     borderRadius: '5px',
@@ -24,4 +25,4 @@ var styles = {
   }
 }
 
-export default OpaqueBox;
+export default OpaqueContainer;

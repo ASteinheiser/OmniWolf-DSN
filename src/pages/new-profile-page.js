@@ -1,21 +1,19 @@
 import React from 'react';
 
-import LoginBackground from '../components/backgrounds/login-background';
-import OpaqueBox from '../components/backgrounds/opaque-box';
-import FormTitle from '../components/form/form-title';
-import NewProfileForm from '../components/page-forms/new-profile-form';
+import EmptyLayout from '../components/layouts/empty-layout';
+import OpaqueBox from '../components/containers/opaque-container';
+import NewProfileForm from '../components/form/new-profile-form';
 
 var NewProfilePage = React.createClass({
   render () {
     return (
-      <LoginBackground>
+      <EmptyLayout>
         <OpaqueBox>
 
-          <FormTitle />
           <NewProfileForm />
 
         </OpaqueBox>
-      </LoginBackground>
+      </EmptyLayout>
     );
   }
 });

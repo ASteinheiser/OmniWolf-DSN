@@ -1,21 +1,21 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/layout-shell';
-import RegisteredDevice from '../components/kit/registered-device';
+import PageLayout from '../components/layouts/page-layout';
+import RegisteredItem from '../components/kit/registered-item';
 import PrimaryButton from '../components/buttons/primary-button';
 
 var DashboardPage = React.createClass({
   render () {
     return (
-      <LayoutShell>
-        <RegisteredDevice name='Baby Monitor'/>
+      <PageLayout>
+        <RegisteredItem name='Baby Monitor'/>
 
-        <div style={[styles.buttonStyle]}>
+        <div style={[styles.buttonContainer]}>
           <PrimaryButton name='registerDevice' type='submit' text='Register New Device'/>
         </div>
 
-      </LayoutShell>
+      </PageLayout>
     );
   }
 });
@@ -23,7 +23,7 @@ var DashboardPage = React.createClass({
 DashboardPage = Radium(DashboardPage);
 
 var styles = {
-  buttonStyle: {
+  buttonContainer: {
 
     width: '94%',
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-var NavTitle = React.createClass({
+var TopNavTitle = React.createClass({
   propTypes: {
     href: React.PropTypes.string.isRequired,
   },
@@ -18,7 +18,7 @@ var NavTitle = React.createClass({
   }
 });
 
-NavTitle = Radium(NavTitle);
+TopNavTitle = Radium(TopNavTitle);
 
 var styles = {
   spacing: {
@@ -45,4 +45,4 @@ var styles = {
   }
 }
 
-export default NavTitle;
+export default TopNavTitle;
