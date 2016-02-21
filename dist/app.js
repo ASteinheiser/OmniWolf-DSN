@@ -27576,14 +27576,16 @@
 	  kitItemStyle: {
 
 	    height: '150px',
-	    width: '100%'
+	    width: '100%',
+
+	    overflow: 'hidden'
 	  },
 	  kitImage: {
 
 	    float: 'left',
 
 	    height: '150px',
-	    width: '200px'
+	    width: '23%'
 	  },
 	  kitTitle: {
 
@@ -27596,7 +27598,7 @@
 	    paddingLeft: '10px',
 	    float: 'left',
 	    height: '100%',
-	    width: '473px',
+	    width: '53%',
 
 	    borderLeft: '1px solid grey'
 	  },
@@ -27608,7 +27610,7 @@
 	    WebkitFontSmoothing: 'antialiased',
 	    color: 'black',
 
-	    width: '473px',
+	    width: '100%%',
 	    paddingTop: '10px'
 	  },
 	  kitPrice: {
@@ -27622,7 +27624,7 @@
 	    float: 'left',
 	    borderLeft: '1px solid grey',
 
-	    width: '188px',
+	    width: '22%',
 	    height: '140px',
 	    paddingTop: '10px'
 	  },
@@ -27848,14 +27850,16 @@
 	  sensorItemStyle: {
 
 	    height: '150px',
-	    width: '100%'
+	    width: '100%',
+
+	    overflow: 'hidden'
 	  },
 	  sensorImage: {
 
 	    float: 'left',
 
 	    height: '150px',
-	    width: '200px'
+	    width: '23%'
 	  },
 	  sensorTitle: {
 
@@ -27868,6 +27872,7 @@
 	    paddingLeft: '10px',
 	    float: 'left',
 	    height: '100%',
+	    width: '53%',
 
 	    borderLeft: '1px solid grey'
 	  },
@@ -27879,7 +27884,7 @@
 	    WebkitFontSmoothing: 'antialiased',
 	    color: 'black',
 
-	    width: '473px',
+	    width: '100%',
 	    paddingTop: '10px'
 	  },
 	  sensorPrice: {
@@ -27893,7 +27898,7 @@
 	    float: 'left',
 	    borderLeft: '1px solid grey',
 
-	    width: '188px',
+	    width: '22%',
 	    height: '140px',
 	    paddingTop: '10px'
 	  },
