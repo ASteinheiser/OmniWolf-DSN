@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/basic-layout';
+import LayoutShell from '../components/layouts/layout-shell';
 import KitItem from '../components/kit/kit-item';
 
 var PreAssembledKitsPage = React.createClass({

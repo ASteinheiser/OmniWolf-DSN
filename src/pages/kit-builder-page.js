@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/basic-layout';
+import LayoutShell from '../components/layouts/layout-shell';
 import SensorItem from '../components/kit/sensor-item';
 
 var KitBuilderPage = React.createClass({

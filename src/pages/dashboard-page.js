@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LayoutShell from '../components/layouts/basic-layout';
+import LayoutShell from '../components/layouts/layout-shell';
 import RegisteredDevice from '../components/kit/registered-device';
 import PrimaryButton from '../components/buttons/primary-button';
 
