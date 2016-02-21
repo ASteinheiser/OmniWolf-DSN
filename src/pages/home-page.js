@@ -37,6 +37,9 @@ var styles = {
     color: 'rgb(215,215,215)',
     WebkitFontSmoothing: 'antialiased',
     textAlign: 'center',
+
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    width: '100%',
   },
   title: {
 
