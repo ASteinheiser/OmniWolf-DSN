@@ -25,7 +25,7 @@ EmptyLayout = Radium(EmptyLayout);
 var styles = {
   fillPage: {
 
-    backgroundColor: 'rgba(240,240,240)',
+    backgroundColor: 'rgb(240,240,240)',
 
     position: 'absolute',
     top: 0,
