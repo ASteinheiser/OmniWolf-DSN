@@ -4,7 +4,7 @@
   "description": "distributed sensor network",
   "main": "index.js",
   "scripts": {
-    "start": "env PORT=1337 node dev-server.js",
+    "start": "node dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

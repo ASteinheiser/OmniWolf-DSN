@@ -53,15 +53,19 @@
   font-size: 26px;
   font-weight: normal;
   font-family: sans-serif;
-  color: rgb(215, 215, 215);
   -webkit-font-smoothing: antialiased;
 }
 
-.cursor-pointer {
+.blueRef {
   cursor: pointer;
   text-decoration: none;
+
+  color: rgb(72, 124, 236);
 }
 
-.blue {
-  color: rgb(72, 124, 236);
+.greyRef {
+  cursor: pointer;
+  text-decoration: none;
+
+  color: rgb(215, 215, 215);
 }
