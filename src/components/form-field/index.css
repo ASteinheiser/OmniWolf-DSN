@@ -1,0 +1,25 @@
+.FormField {
+  flex-direction: row;
+  display: flex;
+}
+
+.FormInput {
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: rgb(215,215,215);
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(43, 43, 43, 0);
+
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px;
+
+  border: none;
+  outline: none;
+  box-shadow: -7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130);
+}
+
+.FormInput:focus {
+  box-shadow: -7px 9px 0px -7px rgb(215,215,215), 7px 9px 0px -7px rgb(215,215,215);
+}

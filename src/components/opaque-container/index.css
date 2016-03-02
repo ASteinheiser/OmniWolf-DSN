@@ -1,0 +1,8 @@
+.OpaqueContainer {
+  background-color: rgba(10, 10, 10, 0.9);
+  width: 350px;
+
+  padding: 30px;
+  border-radius: 5px;
+  margin: auto auto auto auto;
+}

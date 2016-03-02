@@ -7,7 +7,9 @@ import Account from './pages/account'
 import Dashboard from './pages/dashboard'
 import Home from './pages/home'
 import KitBuilder from './pages/kit-builder'
+import Login from './pages/login'
 import PreAssembledKits from './pages/pre-assembled-kits'
+import Signup from './pages/signup'
 
 render((
   <Router history={browserHistory}>
@@ -16,7 +18,9 @@ render((
       <Route path="dashboard" component={Dashboard}/>
       <Route path="home" component={Home}/>
       <Route path="kit-builder" component={KitBuilder}/>
+      <Route path="login" component={Login}/>
       <Route path="pre-assembled-kits" component={PreAssembledKits}/>
+      <Route path="signup" component={Signup}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
