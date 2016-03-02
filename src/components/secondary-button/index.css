@@ -1,0 +1,33 @@
+.SecondaryButton {
+  font-size: 22px;
+  font-weight: normal;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(72, 124, 236);
+  background-color: transparent;
+
+  width: 100%;
+  padding: 10px;
+
+  border: 2px solid rgb(72, 124, 236);
+  outline: none;
+  border-radius: 2px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+
+  cursor: pointer;
+}
+
+.SecondaryButton:hover {
+  color: white;
+  background-color: rgb(50, 100, 205);
+
+  border: 2px solid rgb(50, 100, 205);
+}
+
+.SecondaryButton:active {
+  background-color: rgb(72, 124, 236);
+
+  border: 2px solid rgb(72, 124, 236);
+}

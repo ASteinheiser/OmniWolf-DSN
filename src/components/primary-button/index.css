@@ -1,0 +1,28 @@
+.primaryButton {
+  font-size: 22px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(240,240,240);
+  background-color: rgb(72, 124, 236);
+
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  outline: none;
+  border-radius: 2px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: rgb(50, 100, 205);
+}
+
+.primaryButton:active {
+  background-color: rgb(72, 124, 236);
+}
