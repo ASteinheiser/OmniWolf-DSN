@@ -3,6 +3,22 @@ import React, { Component } from 'react'
 import './index.css'
 
 export default class TopNav extends Component {
+
+  renderNavTabs = () =>  {
+    var loggedin = true
+
+    if (!loggedin) {
+      return <a href='/login' className='TopNav--tab'>Login</a>
+    }
+    if (loggedin) {
+      return <a>
+        <a href='/dashboard' className='TopNav--tab'>Dashboard</a>
+        <a href='/account' className='TopNav--tab'>Account</a>
+        <a href='/home' className='TopNav--tab'>Logout</a>
+      </a>
+    }
+  }
+
   render() {
     return <div className='PageContainer'>
 
@@ -16,9 +32,7 @@ export default class TopNav extends Component {
         <div className='TopNav--tab-container'>
           <a href='/pre-assembled-kits' className='TopNav--tab'>Pre-Assembled Kits</a>
           <a href='/kit-builder' className='TopNav--tab'>Kit Builder</a>
-          <a href='/dashboard' className='TopNav--tab'>Dashboard</a>
-          <a href='/account' className='TopNav--tab'>Account</a>
-          <a href='/home' className='TopNav--tab'>Logout</a>
+          {this.renderNavTabs()}
         </div>
 
       </div>
