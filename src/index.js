@@ -3,11 +3,11 @@ import { render } from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
 import TopNav from './components/top-nav'
-import Account from './components/account'
-import Dashboard from './components/dashboard'
-import Home from './components/home'
-import KitBuilder from './components/kit-builder'
-import PreAssembledKits from './components/pre-assembled-kits'
+import Account from './pages/account'
+import Dashboard from './pages/dashboard'
+import Home from './pages/home'
+import KitBuilder from './pages/kit-builder'
+import PreAssembledKits from './pages/pre-assembled-kits'
 
 render((
   <Router history={browserHistory}>

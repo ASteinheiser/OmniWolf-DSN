@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import PaperContainer from '../paper-container'
+import PaperContainer from '../../components/paper-container'
 
 import './index.css'
 
