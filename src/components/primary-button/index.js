@@ -11,7 +11,7 @@ export default class PrimaryButton extends Component {
   }
 
   render() {
-    return <button className='primaryButton' type={this.props.type} name={this.props.name}>
+    return <button className='PrimaryButton' type={this.props.type} name={this.props.name}>
       {this.props.text}
     </button>
   }

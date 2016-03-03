@@ -1,4 +1,4 @@
-.primaryButton {
+.PrimaryButton {
   font-size: 22px;
   font-weight: lighter;
   font-family: sans-serif;
@@ -20,10 +20,10 @@
   cursor: pointer;
 }
 
-.primaryButton:hover {
+.PrimaryButton:hover {
   background-color: rgb(50, 100, 205);
 }
 
-.primaryButton:active {
+.PrimaryButton:active {
   background-color: rgb(72, 124, 236);
 }

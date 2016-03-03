@@ -1,0 +1,28 @@
+.LargeFont {
+  font-size: 70px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.MediumFont {
+  font-size: 45px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.SmallFont {
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.GreyText {
+  color: rgb(215,215,215);
+}
+
+.BlueText {
+  color: rgb(72, 124, 236);
+}

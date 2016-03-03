@@ -5,8 +5,6 @@ import FormField from '../../components/form-field'
 import PrimaryButton from '../../components/primary-button'
 import SecondaryButton from '../../components/secondary-button'
 
-import './index.css'
-
 export default class Signup extends Component {
   render() {
     return <OpaqueContainer>
