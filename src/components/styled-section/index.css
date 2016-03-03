@@ -17,13 +17,21 @@
 }
 
 .Grey {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgb(215,215,215);
 }
 
 .Blue {
   background-color: rgb(72, 124, 236);
 }
 
+.Black {
+  background-color: rgb(36, 41, 46);
+}
+
 .CenterText {
   text-align: center;
+}
+
+.MaxWidth {
+  width: 100%;
 }

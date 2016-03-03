@@ -40,8 +40,9 @@ export default class TopNav extends Component {
 
       </div>
 
-      {this.props.children}
-
+      <div className='ContentContainer'>
+        {this.props.children}
+      </div>
     </div>
   }
 }
