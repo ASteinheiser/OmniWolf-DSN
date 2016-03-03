@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import StyledSection from '../../components/styled-section'
-import StyledText from '../../components/styled-text'
+import StyledSection from '../components/styled-section'
+import StyledText from '../components/styled-text'
 
 export default class Home extends Component {
   render() {

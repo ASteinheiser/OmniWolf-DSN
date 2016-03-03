@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
-import FormField from '../../components/form-field'
-import OpaqueContainer from '../../components/opaque-container'
-import PrimaryButton from '../../components/primary-button'
-import SecondaryButton from '../../components/secondary-button'
+import FormField from '../components/form-field'
+import OpaqueContainer from '../components/opaque-container'
+import PrimaryButton from '../components/primary-button'
+import SecondaryButton from '../components/secondary-button'
 
 export default class Login extends Component {
   render() {
@@ -22,9 +23,9 @@ export default class Login extends Component {
         <PrimaryButton name='login' type='submit' text='Login'/>
       </form>
 
-      <a href='/signup'>
+      <Link to='/signup'>
         <SecondaryButton name='signup' type='submit' text='Signup'/>
-      </a>
+      </Link>
 
     </OpaqueContainer>
   }

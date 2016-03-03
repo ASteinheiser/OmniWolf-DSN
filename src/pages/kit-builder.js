@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
-import PaperContainer from '../../components/paper-container'
-import SecondaryButton from '../../components/secondary-button'
-import StyledText from '../../components/styled-text'
-import StoreItem from '../../components/store-item'
+import PaperContainer from '../components/paper-container'
+import SecondaryButton from '../components/secondary-button'
+import StyledText from '../components/styled-text'
+import StoreItem from '../components/store-item'
 
 export default class KitBuilder extends Component {
   render() {
@@ -16,13 +17,13 @@ export default class KitBuilder extends Component {
           />
         </div>
         <div className='ButtonContainer'>
-          <a href='/pre-assembled-kits'>
+          <Link to='/pre-assembled-kits'>
             <SecondaryButton
               name='pre-assembled-kits'
               type='button'
               text='Pre-Assembled Kits'
             />
-          </a>
+        </Link>
         </div>
       </div>
       <StoreItem

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 import PaperContainer from '../../components/paper-container'
 import SecondaryButton from '../../components/secondary-button'
@@ -18,13 +19,13 @@ export default class PreAssembledKits extends Component {
           />
         </div>
         <div className='ButtonContainer'>
-          <a href='/kit-builder'>
+          <Link to='/kit-builder'>
             <SecondaryButton
               name='kit-builder'
               type='button'
               text='Kit Builder'
             />
-          </a>
+        </Link>
         </div>
       </div>
       <StoreItem
