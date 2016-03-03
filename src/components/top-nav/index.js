@@ -34,8 +34,7 @@ export default class TopNav extends Component {
         </div>
 
         <div className='TopNav--tab-container'>
-          <a href='/pre-assembled-kits' className='TopNav--tab'>Pre-Assembled Kits</a>
-          <a href='/kit-builder' className='TopNav--tab'>Kit Builder</a>
+          <a href='/pre-assembled-kits' className='TopNav--tab'>Store</a>
           {this.renderNavTabs()}
         </div>
 

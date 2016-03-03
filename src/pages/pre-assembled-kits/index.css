@@ -1,0 +1,14 @@
+.HeaderContainer {
+  width: 100%;
+  display: flex;
+}
+
+.TextContainer {
+  width: 60%;
+  padding: 10px;
+}
+
+.ButtonContainer {
+  width: 40%;
+  padding: 0px 10px;
+}

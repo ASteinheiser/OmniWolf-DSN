@@ -17,10 +17,10 @@ render((
       <Route path="account" component={Account}/>
       <Route path="dashboard" component={Dashboard}/>
       <Route path="home" component={Home}/>
-      <Route path="kit-builder" component={KitBuilder}/>
       <Route path="login" component={Login}/>
-      <Route path="pre-assembled-kits" component={PreAssembledKits}/>
       <Route path="signup" component={Signup}/>
+      <Route path="pre-assembled-kits" component={PreAssembledKits}/>
+      <Route path="kit-builder" component={KitBuilder}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
