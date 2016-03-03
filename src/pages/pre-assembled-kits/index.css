@@ -5,10 +5,10 @@
 
 .TextContainer {
   width: 60%;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .ButtonContainer {
   width: 40%;
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
