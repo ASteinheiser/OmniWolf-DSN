@@ -4,13 +4,17 @@ import './index.css'
 
 export default class TopNav extends Component {
 
-  renderNavTabs = () =>  {
-    var loggedin = true
+  state = {
+    loginStatus: false
+  }
 
-    if (!loggedin) {
+  renderNavTabs = () =>  {
+    var { loginStatus } = this.state
+
+    if (!loginStatus) {
       return <a href='/login' className='TopNav--tab'>Login</a>
     }
-    if (loggedin) {
+    if (loginStatus) {
       return <a>
         <a href='/dashboard' className='TopNav--tab'>Dashboard</a>
         <a href='/account' className='TopNav--tab'>Account</a>
