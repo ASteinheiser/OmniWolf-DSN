@@ -1,0 +1,64 @@
+.NewDeviceContainer {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+  height: 400px;
+  width: 426px;
+  float: left;
+
+  margin: 12px 12px 12px 12px;
+}
+/*registeredDeviceStyle: {
+  WebkitBoxShadow: 0px 0px 10px 0px rgba(0,0,0,0.75),
+
+  height: 380px,
+  width: 47%,
+  float: left,
+
+  margin: 12px 12px 12px 240px
+},
+deviceName: {
+
+  fontSize: 30px,
+  fontWeight: lighter,
+  fontFamily: sans-serif,
+  textAlign: center,
+  WebkitFontSmoothing: antialiased,
+
+  float: left,
+  width: 100%,
+
+  paddingTop: 15px,
+  paddingBottom: 25px
+},
+deviceDataTitle: {
+
+  fontSize: 24px,
+  fontWeight: lighter,
+  fontFamily: sans-serif,
+  textAlign: center,
+  WebkitFontSmoothing: antialiased,
+
+  height: 28px,
+  float: left,
+  width: 50%,
+  paddingTop: 15px
+},
+deviceDataValue: {
+
+  fontSize: 24px,
+  fontWeight: lighter,
+  fontFamily: sans-serif,
+  textAlign: center,
+  WebkitFontSmoothing: antialiased,
+
+  height: 28px,
+  float: left,
+  width: 50%,
+  paddingTop: 15px
+},
+deviceButtons: {
+
+  width: 90%,
+  margin: 20px 20px 0px 0px,
+  float: right
+}*/
