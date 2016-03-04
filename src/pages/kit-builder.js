@@ -1,31 +1,19 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 
 import PaperContainer from '../components/paper-container'
 import SecondaryButton from '../components/secondary-button'
 import StyledText from '../components/styled-text'
+import StoreHeader from '../components/store-header'
 import StoreItem from '../components/store-item'
 
 export default class KitBuilder extends Component {
   render() {
     return <PaperContainer>
-      <div className='HeaderContainer'>
-        <div className='TextContainer'>
-          <StyledText
-            styles='MediumFont BlueText'
-            text='Kit Builder'
-          />
-        </div>
-        <div className='ButtonContainer'>
-          <Link to='/pre-assembled-kits'>
-            <SecondaryButton
-              name='pre-assembled-kits'
-              type='button'
-              text='Pre-Assembled Kits'
-            />
-        </Link>
-        </div>
-      </div>
+      <StoreHeader
+        text='Kit Builder'
+        button='Pre-Assembled Kits'
+        link='/pre-assembled-kits'
+      />
       <StoreItem
         img='images/flame-sensor.jpg'
         name='Flame Sensor'
