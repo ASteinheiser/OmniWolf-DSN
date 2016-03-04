@@ -1,0 +1,11 @@
+.PageNotFound {
+  width: 100%;
+  margin: auto;
+
+  font-size: 100px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(36, 41, 46);
+}
