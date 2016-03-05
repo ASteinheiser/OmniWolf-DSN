@@ -4,14 +4,14 @@ command -v git >/dev/null 2>&1  || { echo >&2 "I require git but it's not instal
 
 echo "Okay, here's what I'll do for you:"
 echo ""
-echo "webpack"
+echo "npm run build"
 echo "git add ."
 echo "git commit -m \"${1}\""
 echo "git push"
 echo "scp -r dist/. ubuntu@omniwolf.io:/var/www/html/"
 echo ""
 read -p "Press [Enter] key to continue... "
-webpack
+npm run build
 git add .
 git commit -m "${1}"
 git push
