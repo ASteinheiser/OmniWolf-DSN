@@ -8,10 +8,6 @@
   left: 0;
   bottom: 0;
   right: 0;
-
-  width: 100%; /* these three lines make no scrollbar on the side */
-  overflow: auto;
-  padding-right: 20px;
 }
 
 .ContentContainer {
