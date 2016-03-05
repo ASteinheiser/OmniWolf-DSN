@@ -28,7 +28,16 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel',
-        include: path.join(__dirname, 'src')
+        include: path.join(__dirname, 'src'),
+        query: {
+          "presets": ["react", "es2015", "stage-0"],
+          "env": {
+            "development": {
+              "presets": ["react-hmre"]
+            }
+          }
+        }
+
       },
       {
         test:   /\.css$/,
