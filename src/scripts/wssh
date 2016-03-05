@@ -15,4 +15,4 @@ npm run build
 git add .
 git commit -m "${1}"
 git push
-scp -r dist/bundle.js ubuntu@omniwolf.io:/var/www/html/
+scp -r dist/. ubuntu@omniwolf.io:/var/www/html/
