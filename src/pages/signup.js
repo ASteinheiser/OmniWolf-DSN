@@ -12,12 +12,12 @@ export default class Signup extends Component {
 
       <form>
         <FormField
+          name='name'
+          placeholder='Name'
+          type='text'/>
+        <FormField
           name='email'
           placeholder='Email'
-          type='email'/>
-        <FormField
-          name='emailConfirm'
-          placeholder='Confirm Email'
           type='email'/>
         <FormField
           name='password'
