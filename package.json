@@ -40,6 +40,7 @@
     "eslint-plugin-react": "^4.1.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.4",
+    "path": "^0.12.7",
     "postcss-loader": "^0.8.1",
     "postcss-scss": "^0.1.6",
     "precss": "^1.4.0",
