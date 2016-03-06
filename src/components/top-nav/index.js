@@ -25,7 +25,7 @@ export default class TopNav extends Component {
   }
 
   render() {
-    return <div className='PageContainer'>
+    return <div className='Page--Container'>
 
       <div className='TopNav--container'>
 
@@ -41,7 +41,7 @@ export default class TopNav extends Component {
 
       </div>
 
-      <div className='ContentContainer'>
+      <div className='Content--Container'>
         {this.props.children}
       </div>
     </div>

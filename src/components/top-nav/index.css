@@ -1,4 +1,4 @@
-.PageContainer {
+.Page--Container {
   display: flex;
   flex-direction: column;
 
@@ -10,7 +10,7 @@
   right: 0;
 }
 
-.ContentContainer {
+.Content--Container {
   margin-top: 52px;
   height: 100%;
   display: flex;

@@ -1,9 +1,9 @@
-.FormField {
+.FormField--Container {
   flex-direction: row;
   display: flex;
 }
 
-.FormInput {
+.FormField--Input {
   font-size: 24px;
   font-weight: lighter;
   font-family: sans-serif;

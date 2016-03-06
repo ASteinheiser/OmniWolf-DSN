@@ -14,24 +14,24 @@ export default class StoreItem extends Component {
   }
 
   render() {
-    return <div className='ItemContainer'>
+    return <div className='Item--Container'>
 
-      <img className='ItemImage' src={this.props.img}/>
+      <img className='Item--Image' src={this.props.img}/>
 
-      <div className='ItemName'>
+      <div className='Item--Title'>
         {this.props.name}
         <br/>
 
-        <div className='ItemDescription'>
+        <div className='Item--Description'>
           {this.props.description}
         </div>
 
       </div>
 
-      <div className='ItemPrice'>
+      <div className='Item--Price'>
         Price: ${this.props.price}
 
-        <div className='AddToCartButton'>
+        <div className='AddToCartButton--Container'>
           <SecondaryButton name='addToCart' type='button' text='Add To Cart'/>
         </div>
 

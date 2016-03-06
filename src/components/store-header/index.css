@@ -1,14 +1,14 @@
-.HeaderContainer {
+.Header--Container {
   width: 100%;
   display: flex;
 }
 
-.TextContainer {
+.Text--Container {
   width: 60%;
   padding: 10px 20px;
 }
 
-.ButtonContainer {
+.Button--Container {
   width: 40%;
   padding: 0px 20px;
 }

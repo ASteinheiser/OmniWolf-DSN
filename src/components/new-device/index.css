@@ -1,4 +1,4 @@
-.NewDeviceContainer {
+.NewDevice--Container {
   background-color: rgb(240,240,240);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   cursor: pointer;
@@ -15,10 +15,10 @@
   outline: none;
 }
 
-.NewDeviceContainer:hover {
+.NewDevice--Container:hover {
   background-color: rgb(220,220,220);
 }
 
-.NewDeviceContainer:active {
+.NewDevice--Container:active {
   background-color: rgb(240,240,240);
 }

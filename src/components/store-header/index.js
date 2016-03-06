@@ -15,14 +15,14 @@ export default class StoreHeader extends Component {
   }
 
   render() {
-    return <div className='HeaderContainer'>
-      <div className='TextContainer'>
+    return <div className='Header--Container'>
+      <div className='Text--Container'>
         <StyledText
           styles='MediumFont BlueText'
           text={this.props.text}
         />
       </div>
-      <div className='ButtonContainer'>
+      <div className='Button--Container'>
         <Link to={this.props.link}>
           <SecondaryButton
             name={this.props.button}

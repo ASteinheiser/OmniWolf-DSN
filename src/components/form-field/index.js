@@ -15,9 +15,9 @@ export default class FormField extends Component {
   }
 
   render() {
-    return <div className='FormField'>
+    return <div className='FormField--Container'>
       <input
-        className='FormInput'
+        className='FormField--Input'
         type={this.props.type}
         placeholder={this.props.placeholder}
         name={this.props.name}/>

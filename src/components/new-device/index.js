@@ -6,7 +6,7 @@ import './index.css'
 
 export default class NewDevice extends Component {
   render() {
-    return <button className='NewDeviceContainer'>
+    return <button className='NewDevice--Container'>
       <StyledText
         styles='SmallFont BlueText'
         text='Add New Device'

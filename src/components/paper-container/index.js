@@ -4,7 +4,7 @@ import './index.css'
 
 export default class PaperContainer extends Component {
   render() {
-    return <div className='PaperContainer'>
+    return <div className='Paper--Container'>
       <div className='HiddenScrollBar'>
         {this.props.children}
       </div>
