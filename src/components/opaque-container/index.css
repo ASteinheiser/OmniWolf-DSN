@@ -1,6 +1,7 @@
 .Opaque--Container {
   background-color: rgb(36, 41, 46);
-  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
 
   padding: 30px;
   border-radius: 5px;

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
+import HomeContainer from '../components/home-container'
 import StyledSection from '../components/styled-section'
 import StyledText from '../components/styled-text'
 
 export default class Home extends Component {
   render() {
-    return <div className='MaxWidth'>
+    return <HomeContainer>
       <StyledSection styles='SmallSection Black CenterText'>
         <StyledText
           styles='LargeFont GreyText'
@@ -52,6 +53,6 @@ export default class Home extends Component {
           text='Currently under development...'
         />
       </StyledSection>
-    </div>
+    </HomeContainer>
   }
 }
