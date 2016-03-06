@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 
 import PaperContainer from '../components/paper-container'
-import SecondaryButton from '../components/secondary-button'
-import StyledText from '../components/styled-text'
 import StoreHeader from '../components/store-header'
 import StoreItem from '../components/store-item'
 
