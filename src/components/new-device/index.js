@@ -11,6 +11,6 @@ export default class NewDevice extends Component {
         styles='SmallFont BlueText'
         text='Add New Device'
       />
-  </button>
+    </button>
   }
 }

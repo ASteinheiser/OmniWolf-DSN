@@ -4,9 +4,9 @@
   cursor: pointer;
 
   height: 400px;
-  width: 426px;
+  width: 47%;
   float: left;
-  margin: 12px 12px 12px 12px;
+  margin: 13px;
 
   transition-duration: 0.2s;
   transition-timing-function: ease;
