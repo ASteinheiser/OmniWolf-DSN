@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ASteinheiser/OmniWolf-DSN#readme",
   "dependencies": {
+    "express": "^4.13.4",
     "lodash": "^4.5.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
