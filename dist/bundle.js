@@ -15595,7 +15595,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".FormField--Container {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.FormField--Input {\n  font-size: 24px;\n  font-weight: lighter;\n  font-family: sans-serif;\n  color: rgb(215,215,215);\n  -webkit-font-smoothing: antialiased;\n  background-color: rgba(43, 43, 43, 0);\n\n  width: 100%;\n  margin-bottom: 15px;\n  padding: 5px;\n\n  border: none;\n  outline: none;\n  box-shadow: -7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130);\n}\n\n.FormInput--Input:focus {\n  box-shadow: -7px 9px 0px -7px rgb(215,215,215), 7px 9px 0px -7px rgb(215,215,215);\n}\n", ""]);
+	exports.push([module.id, ".FormField--Container {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.FormField--Input {\n  font-size: 24px;\n  font-weight: lighter;\n  font-family: sans-serif;\n  color: rgb(215,215,215);\n  -webkit-font-smoothing: antialiased;\n  background-color: rgba(43, 43, 43, 0);\n\n  width: 100%;\n  margin-bottom: 15px;\n  padding: 5px;\n\n  border: none;\n  outline: none;\n  box-shadow: -7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130);\n}\n\n.FormField--Input:focus {\n  box-shadow: -7px 9px 0px -7px rgb(215,215,215), 7px 9px 0px -7px rgb(215,215,215);\n}\n", ""]);
 	
 	// exports
 

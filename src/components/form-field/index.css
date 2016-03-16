@@ -20,6 +20,6 @@
   box-shadow: -7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130);
 }
 
-.FormInput--Input:focus {
+.FormField--Input:focus {
   box-shadow: -7px 9px 0px -7px rgb(215,215,215), 7px 9px 0px -7px rgb(215,215,215);
 }
