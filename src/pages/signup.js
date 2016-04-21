@@ -7,26 +7,43 @@ import PrimaryButton from '../components/primary-button'
 import SecondaryButton from '../components/secondary-button'
 
 export default class Signup extends Component {
+
+  handleSubmit = () =>
+    console.log('submitting: ', this.state.email, ' and ', this.state.password)
+
+  handleChange = (event) => {
+    if (event.target.name == 'email') {
+      this.setState({email: event.target.value})
+
+    } else if (event.target.name == 'password') {
+      this.setState({password: event.target.value})
+    }
+  }
+
   render() {
     return <OpaqueContainer>
 
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <FormField
           name='name'
           placeholder='Name'
-          type='text'/>
+          type='text'
+          onChange={this.handleChange}/>
         <FormField
           name='email'
           placeholder='Email'
-          type='email'/>
+          type='email'
+          onChange={this.handleChange}/>
         <FormField
           name='password'
           placeholder='Password'
-          type='password'/>
+          type='password'
+          onChange={this.handleChange}/>
         <FormField
           name='passwordConfirm'
           placeholder='Confirm Password'
-          type='password'/>
+          type='password'
+          onChange={this.handleChange}/>
 
         <PrimaryButton name='signup' type='submit' text='Signup'/>
       </form>

@@ -7,18 +7,32 @@ import PrimaryButton from '../components/primary-button'
 import SecondaryButton from '../components/secondary-button'
 
 export default class Login extends Component {
+
+  handleSubmit = () =>
+
+  handleChange = (event) => {
+    if (event.target.name == 'email') {
+      this.setState({email: event.target.value})
+
+    } else if (event.target.name == 'password') {
+      this.setState({password: event.target.value})
+    }
+  }
+
   render() {
     return <OpaqueContainer>
 
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <FormField
           name='email'
           placeholder='Email'
-          type='email'/>
+          type='email'
+          onChange={this.handleChange}/>
         <FormField
           name='password'
           placeholder='Password'
-          type='password'/>
+          type='password'
+          onChange={this.handleChange}/>
 
         <PrimaryButton name='login' type='submit' text='Login'/>
       </form>

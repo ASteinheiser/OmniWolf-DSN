@@ -7,7 +7,8 @@ export default class FormField extends Component {
   propTypes: {
     name: React.PropTypes.string.isRequired,
     placeholder: React.PropTypes.string,
-    type: React.PropTypes.string.isRequired
+    type: React.PropTypes.string.isRequired,
+    onChange: React.PropTypes.func.isRequired
   }
 
   defaultProps: {
@@ -20,7 +21,8 @@ export default class FormField extends Component {
         className='FormField--Input'
         type={this.props.type}
         placeholder={this.props.placeholder}
-        name={this.props.name}/>
+        name={this.props.name}
+        onChange={this.props.onChange}/>
     </div>
   }
 }
