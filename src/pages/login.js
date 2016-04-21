@@ -1,38 +1,23 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-
 import FormField from '../components/form-field'
 import OpaqueContainer from '../components/opaque-container'
 import PrimaryButton from '../components/primary-button'
 import SecondaryButton from '../components/secondary-button'
 
 export default class Login extends Component {
-
-  handleSubmit = () =>
-
-  handleChange = (event) => {
-    if (event.target.name == 'email') {
-      this.setState({email: event.target.value})
-
-    } else if (event.target.name == 'password') {
-      this.setState({password: event.target.value})
-    }
-  }
-
   render() {
     return <OpaqueContainer>
 
-      <form onSubmit={this.handleSubmit}>
+      <form action="http://omniwolf.io:1337/sessions" method="post">
         <FormField
           name='email'
           placeholder='Email'
-          type='email'
-          onChange={this.handleChange}/>
+          type='email'/>
         <FormField
           name='password'
           placeholder='Password'
-          type='password'
-          onChange={this.handleChange}/>
+          type='password'/>
 
         <PrimaryButton name='login' type='submit' text='Login'/>
       </form>

@@ -7,43 +7,26 @@ import PrimaryButton from '../components/primary-button'
 import SecondaryButton from '../components/secondary-button'
 
 export default class Signup extends Component {
-
-  handleSubmit = () =>
-    console.log('submitting: ', this.state.email, ' and ', this.state.password)
-
-  handleChange = (event) => {
-    if (event.target.name == 'email') {
-      this.setState({email: event.target.value})
-
-    } else if (event.target.name == 'password') {
-      this.setState({password: event.target.value})
-    }
-  }
-
   render() {
     return <OpaqueContainer>
 
-      <form onSubmit={this.handleSubmit}>
+      <form action='http://omniwolf.io:1337/devices' method='post'>
         <FormField
           name='name'
           placeholder='Name'
-          type='text'
-          onChange={this.handleChange}/>
+          type='text'/>
         <FormField
           name='email'
           placeholder='Email'
-          type='email'
-          onChange={this.handleChange}/>
+          type='email'/>
         <FormField
           name='password'
           placeholder='Password'
-          type='password'
-          onChange={this.handleChange}/>
+          type='password'/>
         <FormField
           name='passwordConfirm'
           placeholder='Confirm Password'
-          type='password'
-          onChange={this.handleChange}/>
+          type='password'/>
 
         <PrimaryButton name='signup' type='submit' text='Signup'/>
       </form>
