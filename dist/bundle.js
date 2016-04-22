@@ -15477,7 +15477,7 @@
 	        null,
 	        _react2.default.createElement(
 	          'form',
-	          { action: 'http://omniwolf.io:1337/sessions', method: 'post' },
+	          { action: '/login', method: 'post' },
 	          _react2.default.createElement(_formField2.default, {
 	            name: 'email',
 	            placeholder: 'Email',
@@ -15705,7 +15705,7 @@
 	        null,
 	        _react2.default.createElement(
 	          'form',
-	          { action: 'http://omniwolf.io:1337/devices', method: 'post' },
+	          { action: '/signup', method: 'post' },
 	          _react2.default.createElement(_formField2.default, {
 	            name: 'name',
 	            placeholder: 'Name',
