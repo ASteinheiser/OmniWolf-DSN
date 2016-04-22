@@ -10,7 +10,7 @@ export default class Signup extends Component {
   render() {
     return <OpaqueContainer>
 
-      <form action='http://omniwolf.io:1337/devices' method='post'>
+      <form action='/signup' method='post'>
         <FormField
           name='name'
           placeholder='Name'

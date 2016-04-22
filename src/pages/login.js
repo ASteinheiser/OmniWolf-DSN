@@ -9,7 +9,7 @@ export default class Login extends Component {
   render() {
     return <OpaqueContainer>
 
-      <form action="http://omniwolf.io:1337/sessions" method="post">
+      <form action="/login" method="post">
         <FormField
           name='email'
           placeholder='Email'
