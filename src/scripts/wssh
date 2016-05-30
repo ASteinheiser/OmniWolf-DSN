@@ -17,8 +17,10 @@ echo "scp -r server.js ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
 echo "scp -r package.json ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
 echo ""
 echo "ssh ubuntu@omniwolf.io"
-echo "sudo forever stop app-omniwolf/server.js"
-echo "sudo forever start app-omniwolf/server.js"
+echo "cd app-omniwolf"
+echo "sudo forever stop server.js"
+echo "npm install"
+echo "sudo forever start server.js"
 echo ""
 read -p "Press [Enter] key to continue... "
 
@@ -35,6 +37,8 @@ scp -r server.js ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
 scp -r package.json ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
 
 ssh ubuntu@omniwolf.io <<-'ENDSSH'
-  sudo forever stop app-omniwolf/server.js
-  sudo forever start app-omniwolf/server.js
+  cd app-omniwolf
+  sudo forever stop server.js
+  npm install
+  sudo forever start server.js
 ENDSSH
