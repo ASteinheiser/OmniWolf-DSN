@@ -45,7 +45,6 @@
     "eslint-plugin-babel": "^3.1.0",
     "eslint-plugin-react": "^4.1.0",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.13.4",
     "file-loader": "^0.8.5",
     "path": "^0.12.7",
     "postcss-loader": "^0.8.1",
