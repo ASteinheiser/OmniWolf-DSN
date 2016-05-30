@@ -6,7 +6,7 @@ var request = require('request');
 
 var app = express();
 
-var port = 1337;
+var port = process.env.port || 80;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
