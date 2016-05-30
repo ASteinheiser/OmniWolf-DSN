@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var request = require('request');
+var expressSession  = require("express-session")
 
 var app = express();
 
@@ -12,28 +13,29 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(expressSession({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}))
 
 app.post('/login',function(req,res){
-  var formData = {email:req.body.email,password:req.body.password};
-  request.post({url:'http://omniwolf.io:1337/sessions', formData: formData}, function optionalCallback(err, httpResponse, body) {
+   var formData = {email:req.body.email,password:req.body.password};
+  console.log(req.body);
+  request.post({url:'http://omniwolf.io:1337/sessions', form: formData, json:true}, function optionalCallback(err, httpResponse, body) {
    if (err) {
      res.redirect('/login');
      return
    }
-   res.redirect('/dashboard');
+  res.redirect('/dashboard');
   });
 });
 
 app.post('/signup',function(req,res){
  var formData = {email:req.body.email,password:req.body.password};
- request.post({url:'http://omniwolf.io:1337/devices', formData: formData}, function optionalCallback(err, httpResponse, body) {
+ request.post({url:'http://omniwolf.io:1337/devices', form: formData}, function optionalCallback(err, httpResponse, body) {
   if (err) {
     res.redirect('/signup');
     return
   }
   res.redirect('/dashboard');
   });
-
 });
 
 app.get('*', function(req, res) {
