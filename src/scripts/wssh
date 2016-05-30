@@ -8,11 +8,19 @@ echo "npm run build"
 echo "git add ."
 echo "git commit -m \"${1}\""
 echo "git push"
-echo "scp -r ./ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
+echo "scp -r public/ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
+echo "scp -r src/ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
+echo "scp -r index.html ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
+echo "scp -r server.js ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
+echo "scp -r package.json ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
 echo ""
 read -p "Press [Enter] key to continue... "
 npm run build
 git add .
 git commit -m "${1}"
 git push
-scp -r ./ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
+scp -r public/ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
+scp -r src/ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
+scp -r index.html ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
+scp -r server.js ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
+scp -r package.json ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
