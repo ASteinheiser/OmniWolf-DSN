@@ -34,6 +34,7 @@ scp -r index.html ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
 scp -r server.js ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
 scp -r package.json ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf
 
-ssh ubuntu@omniwolf.io
-sudo forever stop app-omniwolf/server.js
-sudo forever start app-omniwolf/server.js
+ssh ubuntu@omniwolf.io <<-'ENDSSH'
+  sudo forever stop app-omniwolf/server.js
+  sudo forever start app-omniwolf/server.js
+ENDSSH
