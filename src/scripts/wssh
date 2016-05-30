@@ -8,7 +8,7 @@ echo "npm run build"
 echo "git add ."
 echo "git commit -m \"${1}\""
 echo "git push"
-echo "scp -r dist/. ubuntu@omniwolf.io:/home/ubuntu/express-server/public/dist/"
+echo "scp -r ./ ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf"
 echo ""
 read -p "Press [Enter] key to continue... "
 npm run build
