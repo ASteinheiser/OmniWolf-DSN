@@ -4,7 +4,7 @@
   "description": "distributed sensor network",
   "main": "index.js",
   "scripts": {
-    "start": "node dev-server.js",
+    "start": "port=3000 node server.js",
     "build": "webpack --config webpack.config.prod.js",
     "build-dev": "webpack --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +27,11 @@
     "lodash": "^4.5.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.5",
     "react-router": "^2.0.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-promise": "^0.5.3",
     "request": "^2.72.0"
   },
   "devDependencies": {

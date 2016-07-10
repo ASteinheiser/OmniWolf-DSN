@@ -35,3 +35,4 @@ node_modules
 webpack.config.js
 
 src/.DS_Store
+public

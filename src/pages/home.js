@@ -5,6 +5,7 @@ import StyledSection from '../components/styled-section'
 import StyledText from '../components/styled-text'
 
 export default class Home extends Component {
+
   render() {
     return <HomeContainer>
       <StyledSection styles='SmallSection Black CenterText'>
