@@ -1,26 +1,24 @@
+import { validateToken } from '../../redux/actions'
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router'
+import { bindActionCreators } from 'redux'
 
 import './index.css'
 
-export default class TopNav extends Component {
-
-  state = {
-    loginStatus: false
-  }
+class TopNav extends Component {
 
   renderNavTabs = () =>  {
-    var { loginStatus } = this.state
+    this.props.validate()
 
-    if (!loginStatus) {
-      return <Link to='/login' className='TopNav--tab'>Login</Link>
-    }
-    if (loginStatus) {
+    if (this.props.isValid) {
       return <div>
         <Link to='/dashboard' className='TopNav--tab'>Dashboard</Link>
         <Link to='/account' className='TopNav--tab'>Account</Link>
         <Link to='/' className='TopNav--tab'>Logout</Link>
       </div>
+    } else {
+      return <Link to='/login' className='TopNav--tab'>Login</Link>
     }
   }
 
@@ -47,3 +45,15 @@ export default class TopNav extends Component {
     </div>
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    isValid: state.user.isValid
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({validate: validateToken}, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TopNav)

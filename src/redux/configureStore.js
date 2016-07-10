@@ -1,11 +1,11 @@
-import { createStore, applyMiddleware, compose,combineReducers } from 'redux'
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import rootReducer from './reducers'
 import { browserHistory } from 'react-router';
-import { routerMiddleware ,routerReducer} from 'react-router-redux';
+import { routerMiddleware ,routerReducer } from 'react-router-redux';
 import ReduxPromise from 'redux-promise';
 
 const reducer = combineReducers({
-  rootReducer,
+  user: rootReducer,
   routing: routerReducer
 })
 

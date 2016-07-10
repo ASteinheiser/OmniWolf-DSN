@@ -1,13 +1,20 @@
-import {TEST_ACTION} from './actions'
+import { VALIDATE_TOKEN } from './actions'
 
-export default function reducer(state = {}, action){
+export default function reducer(state = {}, action) {
+
   switch(action.type){
-    case TEST_ACTION:
+
+    case VALIDATE_TOKEN:
       return Object.assign({},state,{
-        text:action.text
+        isValid: isValid(action.token)
       })
       break;
+
     default:
       return state
   }
+}
+
+function isValid(token) {
+  return true
 }

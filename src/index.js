@@ -24,18 +24,18 @@ const history = syncHistoryWithStore(browserHistory, store)
 
 render((
   <Provider store={store}>
-  <Router history={history}>
-    <Route path="/" component={Layout}>
-      <IndexRoute component={Home}/>
-      <Route path="account" component={Account}/>
-      <Route path="dashboard" component={Dashboard}/>
-      <Route path="login" component={Login}/>
-      <Route path="signup" component={Signup}/>
-      <Route path="pre-assembled-kits" component={PreAssembledKits}/>
-      <Route path="kit-builder" component={KitBuilder}/>
+    <Router history={history}>
+      <Route path="/" component={Layout}>
+        <IndexRoute component={Home}/>
+        <Route path="account" component={Account}/>
+        <Route path="dashboard" component={Dashboard}/>
+        <Route path="login" component={Login}/>
+        <Route path="signup" component={Signup}/>
+        <Route path="pre-assembled-kits" component={PreAssembledKits}/>
+        <Route path="kit-builder" component={KitBuilder}/>
 
-      <Route path="*" component={NoMatch}/>
-    </Route>
-  </Router>
+        <Route path="*" component={NoMatch}/>
+      </Route>
+    </Router>
   </Provider>
 ), document.getElementById('app'))

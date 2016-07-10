@@ -1,8 +1,8 @@
-export const TEST_ACTION = "TEST ACTION";
+export const VALIDATE_TOKEN = "VALIDATE TOKEN";
 
-export function testAction(text){
+export function validateToken(token) {
   return {
-    type:TEST_ACTION,
-    text:text
+    type: VALIDATE_TOKEN,
+    token: token
   }
 }
