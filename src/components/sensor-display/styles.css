@@ -5,10 +5,8 @@
 .borderTop {
   border-top: 2px solid rgb(74, 189, 172);
 
-  padding-top: 35px;
+  padding-top: 15px;
   width: calc(100%-10px);
-
-  padding-left: 10px;
 }
 
 .container {
