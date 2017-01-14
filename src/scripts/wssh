@@ -1,0 +1,19 @@
+#!/bin/bash
+
+command -v git >/dev/null 2>&1  || { echo >&2 "I require git but it's not installed. I'm just gonna back away slowly..."; exit 1; }
+
+echo "Okay, here's what I'll do for you:"
+echo ""
+echo "npm run build"
+echo "git add ."
+echo "git commit -m \"${1}\""
+echo "git push"
+echo "scp -r dist/. ubuntu@omniwolf.io:/home/ubuntu/express-server/public/dist/"
+echo ""
+read -p "Press [Enter] key to continue... "
+
+npm run build
+git add .
+git commit -m "${1}"
+git push
+scp -r dist/. ubuntu@omniwolf.io:/home/ubuntu/express-server/public/dist/
