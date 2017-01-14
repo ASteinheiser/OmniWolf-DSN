@@ -43,6 +43,12 @@ export default class Dashboard extends React.Component {
           <AddAction />
         </SensorDisplay>
 
+        <SensorDisplay title="Back Window">
+          <AddAction />
+        </SensorDisplay>
+
+        <div className={[styles.bottomSpace]} />
+
       </div>
     )
   }

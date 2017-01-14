@@ -49,3 +49,9 @@
 .floatRight {
   float: right;
 }
+
+.bottomSpace {
+  float: left;
+  height: 40px;
+  width: 200px;
+}
