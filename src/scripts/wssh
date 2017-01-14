@@ -9,6 +9,7 @@ echo "git add ."
 echo "git commit -m \"${1}\""
 echo "git push"
 echo "scp -r dist/. ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf/public/dist/"
+echo "scp -r index.html ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf/"
 echo ""
 read -p "Press [Enter] key to continue... "
 
@@ -17,3 +18,4 @@ git add .
 git commit -m "${1}"
 git push
 scp -i ~/Downloads/Keys/OmniWolf.pem -r dist/. ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf/public/dist/
+scp -i ~/Downloads/Keys/OmniWolf.pem -r index.html ubuntu@omniwolf.io:/home/ubuntu/app-omniwolf/
