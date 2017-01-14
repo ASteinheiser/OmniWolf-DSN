@@ -10,9 +10,11 @@ export default class Home extends React.Component {
       <div className={[styles.spaceTop]}>
         <div className={[styles.paddingLeft]}>
 
+          <br />
+
           <StyledText
-            text="About"
-            size="billboard"
+            text="What is Omniwolf?"
+            size="large"
             color="blue"
           />
 

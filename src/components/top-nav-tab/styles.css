@@ -10,16 +10,19 @@
   text-decoration: none;
 
   height: 40px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 .topNavElement:hover {
   background: #292929;
-  color: #4abdac;
+  color: rgb(72, 124, 236);
 }
 
 .active {
-  border-bottom: 3px solid #4abdac;
+  border-bottom: 3px solid rgb(72, 124, 236);
   padding-bottom: 7px;
 
-  color: #4abdac;
+  color: rgb(72, 124, 236);
 }

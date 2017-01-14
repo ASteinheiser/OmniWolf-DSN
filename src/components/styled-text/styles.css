@@ -15,7 +15,7 @@
 }
 
 .blue {
-  color: #4abdac;
+  color: rgb(72, 124, 236);
 }
 
 .black {
@@ -48,5 +48,5 @@
 }
 
 .hoverBlue:hover {
-  color: #4abdac;
+  color: rgb(72, 124, 236);
 }

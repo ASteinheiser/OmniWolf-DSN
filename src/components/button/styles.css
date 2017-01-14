@@ -1,0 +1,32 @@
+.button {
+  font-size: 28px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(72, 124, 236);
+  background-color: transparent;
+
+  padding: 12px;
+  margin-bottom: 10px;
+
+  border: 2px solid rgb(72, 124, 236);
+  outline: none;
+  border-radius: 2px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(37, 37, 37);
+
+  border: 2px solid rgb(37, 37, 37);
+}
+
+.button:active {
+  background-color: rgb(72, 124, 236);
+
+  border: 2px solid rgb(72, 124, 236);
+}

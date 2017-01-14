@@ -1,5 +1,5 @@
 .container {
-  border: 2px solid rgb(74, 189, 172);
+  border: 2px solid rgb(72, 124, 236);
 
   border-radius: 5px;
   cursor: pointer;
@@ -8,6 +8,9 @@
   float: left;
 
   width: 140px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 .container:hover {
