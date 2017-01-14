@@ -32,6 +32,6 @@
 }
 
 .spaceTop {
-  position: fixed;
+  position: relative;
   top: 80px;
 }
