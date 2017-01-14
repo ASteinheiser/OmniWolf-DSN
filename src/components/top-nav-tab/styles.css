@@ -1,0 +1,25 @@
+.topNavElement {
+  cursor: pointer;
+  color: #DFDCE3;
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+
+  float: right;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+
+  height: 40px;
+}
+
+.topNavElement:hover {
+  background: #292929;
+  color: #4abdac;
+}
+
+.active {
+  border-bottom: 3px solid #4abdac;
+  padding-bottom: 7px;
+
+  color: #4abdac;
+}
