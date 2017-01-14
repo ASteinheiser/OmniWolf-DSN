@@ -1,0 +1,19 @@
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background: #373737;
+  background-size: cover;
+
+  overflow: scroll;
+}
+
+.marginLeft {
+  margin-left: 25px;
+}

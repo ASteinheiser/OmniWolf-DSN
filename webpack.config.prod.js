@@ -1,6 +1,6 @@
-var path          = require('path');
-var webpack       = require('webpack');
-var autoprefixer  = require('autoprefixer');
+var path         = require('path');
+var webpack      = require('webpack');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'source-map',
@@ -8,8 +8,9 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'public/dist'),
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/dist/'
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
@@ -27,12 +28,16 @@ module.exports = {
         loader: 'babel',
         include: path.join(__dirname, 'src'),
         query: {
-          "presets": ["react", "es2015", "stage-0"]
+          presets: [
+            'babel-preset-es2015',
+            'babel-preset-react',
+            'babel-preset-stage-0'
+          ].map(require.resolve)
         }
       },
       {
         test:   /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
+        loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]&importLoaders=1!postcss-loader'
       },
       {
         test: /\.jpg$/,

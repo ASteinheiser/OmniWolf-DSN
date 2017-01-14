@@ -1,57 +1,24 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var request = require('request');
-var expressSession  = require("express-session")
+const express = require('express')
+const path = require('path')
 
-var app = express();
+const app = express()
 
-var port = process.env.port || 80;
+const port = process.env.port || 80
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(expressSession({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}))
+app.use(express.static(path.join(__dirname)))
 
-app.post('/login',function(req,res){
-   var formData = {email:req.body.email,password:req.body.password};
-  console.log(req.body);
-  request.post({url:'http://omniwolf.io:1337/sessions', form: formData, json:true}, function optionalCallback(err, httpResponse, body) {
-   if (err) {
-     res.redirect('/login');
-     return
-   }
-  res.redirect('/dashboard');
-  });
-});
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'))
+})
 
-app.post('/signup',function(req,res){
- var formData = {email:req.body.email,password:req.body.password};
- request.post({url:'http://omniwolf.io:1337/devices', form: formData}, function optionalCallback(err, httpResponse, body) {
-  if (err) {
-    res.redirect('/signup');
-    return
-  }
-  res.redirect('/dashboard');
-  });
-});
-
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
+app.use(function (err, req, res) {
+  res.status(err.status || 500)
   res.render('error', {
     message: err.message,
-    error: {}
-  });
-});
+    error: {},
+  })
+})
 
-app.listen(port,function(){
-  console.log("Server started on port: ",port);
+app.listen(port, function () {
+  console.log("Server started on port: ", port)
 })

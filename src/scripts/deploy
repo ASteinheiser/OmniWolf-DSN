@@ -1,0 +1,48 @@
+#!/bin/bash
+
+command -v git >/dev/null 2>&1  || { echo >&2 "I require git but it's not installed. I'm just gonna back away slowly..."; exit 1; }
+
+echo ""
+echo ""
+echo "Okay, here's what I'll do for you:"
+echo ""
+echo "git add ."
+echo "git commit -m \"${1}\""
+echo "git push"
+echo ""
+echo "npm run build"
+echo ""
+echo "scp -r dist/ ubuntu@54.218.73.136:/home/ubuntu/iamandrew"
+echo "scp -r src/ ubuntu@54.218.73.136:/home/ubuntu/iamandrew"
+echo "scp -r server.js ubuntu@54.218.73.136:/home/ubuntu/iamandrew"
+echo "scp -r package.json ubuntu@54.218.73.136:/home/ubuntu/iamandrew"
+echo "scp -r index.html ubuntu@54.218.73.136:/home/ubuntu/iamandrew"
+echo ""
+echo "ssh ubuntu@54.218.73.136"
+echo "cd /home/ubuntu/iamandrew"
+echo "sudo forever stop server.js"
+echo "sudo npm i"
+echo "sudo forever start server.js"
+echo ""
+read -p "Press [Enter] key to continue... "
+echo ""
+echo ""
+
+git add .
+git commit -m "${1}"
+git push
+
+npm run build
+
+scp -i ~/.ssh/iamandrew.pem -r dist/ ubuntu@54.218.73.136:/home/ubuntu/iamandrew
+scp -i ~/.ssh/iamandrew.pem -r src/ ubuntu@54.218.73.136:/home/ubuntu/iamandrew
+scp -i ~/.ssh/iamandrew.pem -r server.js ubuntu@54.218.73.136:/home/ubuntu/iamandrew
+scp -i ~/.ssh/iamandrew.pem -r package.json ubuntu@54.218.73.136:/home/ubuntu/iamandrew
+scp -i ~/.ssh/iamandrew.pem -r index.html ubuntu@54.218.73.136:/home/ubuntu/iamandrew
+
+ssh -i ~/.ssh/iamandrew.pem ubuntu@54.218.73.136 <<-'ENDSSH'
+  cd /home/ubuntu/iamandrew
+  sudo forever stop server.js
+  sudo npm i
+  sudo forever start server.js
+ENDSSH

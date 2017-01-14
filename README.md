@@ -1,2 +1,3 @@
-# OmniWolf DSN
-A distributed sensor network system.
+# Omniwolf DSN
+
+A Distributed Sensor Network. 

@@ -1,0 +1,52 @@
+.font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.white {
+  color: #DFDCE3;
+}
+
+.pearl {
+  color: #efefef;
+}
+
+.gray {
+  color: #373737;
+}
+
+.blue {
+  color: #4abdac;
+}
+
+.black {
+  color: #000000;
+}
+
+.regular {
+  font-size: 28px;
+}
+
+.billboard {
+  font-size: 60px;
+}
+
+.large {
+  font-size: 40px;
+}
+
+.small {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.topAlign {
+  vertical-align: top;
+  display: table-cell;
+}
+
+.hoverBlue:hover {
+  color: #4abdac;
+}

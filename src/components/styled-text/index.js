@@ -1,17 +1,40 @@
-import React, { Component } from 'react'
+import React, { PropTypes } from 'react'
+import classnames from 'classnames'
 
-import './index.css'
+import styles from './styles.css'
 
-export default class StyledText extends Component {
+const TEXT_SIZES = ['regular', 'large', 'small', 'billboard']
+const TEXT_COLORS = ['white', 'gray', 'blue', 'black']
 
-  propTypes: {
-    styles: React.PropTypes.string.isRequired,
-    text: React.PropTypes.string.isRequired
-  }
+const propTypes = {
+  text: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(TEXT_SIZES).isRequired,
+  color: PropTypes.oneOf(TEXT_COLORS),
+  bold: PropTypes.boolean,
+  hoverBlue: PropTypes.boolean,
+  topAlign: PropTypes.boolean,
+  className: PropTypes.string,
+}
+
+export default class StyledText extends React.Component {
 
   render() {
-    return <font className={this.props.styles}>
-      {this.props.text}
-    </font>
+    const classes = classnames(
+      styles[this.props.color],
+      styles[this.props.size],
+      { [`${styles.bold}`]: this.props.bold },
+      { [`${styles.hoverBlue}`]: this.props.hoverBlue },
+      { [`${styles.topAlign}`]: this.props.topAlign },
+      this.props.className,
+      styles.font
+    )
+
+    return (
+      <span className={classes}>
+        {this.props.text}
+      </span>
+    )
   }
 }
+
+StyledText.PropTypes = propTypes
