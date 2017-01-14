@@ -24,9 +24,3 @@
 
   border: 2px solid rgb(37, 37, 37);
 }
-
-.button:active {
-  background-color: rgb(72, 124, 236);
-
-  border: 2px solid rgb(72, 124, 236);
-}

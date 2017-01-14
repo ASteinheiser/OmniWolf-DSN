@@ -1,0 +1,26 @@
+.search {
+  font-size: 28px;
+  font-weight: lighter;
+  font-family: sans-serif;
+
+  color: rgb(215,215,215);
+
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(43, 43, 43, 0);
+
+  margin-top: 7px;
+  padding: 5px;
+  width: 450px;
+
+  border: none;
+  outline: none;
+  box-shadow: -7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130);
+}
+
+.searchIcon {
+  color: rgb(130,130,130);
+  font-size: 27px;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+  padding-right: 7px;
+}

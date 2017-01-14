@@ -45,3 +45,7 @@
   margin: 13px;
   float: left;
 }
+
+.floatRight {
+  float: right;
+}

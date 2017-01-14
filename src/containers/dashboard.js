@@ -4,6 +4,7 @@ import StyledText from '../components/styled-text'
 import SensorDisplay from '../components/sensor-display'
 import AddAction from '../components/add-action'
 import Button from '../components/button'
+import Search from '../components/search'
 
 import styles from './styles.css'
 
@@ -14,15 +15,23 @@ export default class Dashboard extends React.Component {
 
         <div className={[styles.topBar]}>
 
-          <Button type="button" name="add-group">
-            <i className="fa fa-plus" />
-          </Button>
+          <Search
+            type="text"
+            name="search"
+            placeholder="Search APIs, sensors, etc"
+          />
 
-          <span className={[styles.space]} />
+          <div className={[styles.floatRight]}>
+            <Button type="button" name="add-group">
+              <i className="fa fa-plus" />
+            </Button>
 
-          <Button type="button" name="add-group">
-            <i className="fa fa-trash" />
-          </Button>
+            <span className={[styles.space]} />
+
+            <Button type="button" name="add-group">
+              <i className="fa fa-trash" />
+            </Button>
+          </div>
 
         </div>
 
