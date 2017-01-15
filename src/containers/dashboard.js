@@ -31,10 +31,10 @@ export default class Dashboard extends React.Component {
         self.setState({ temp: Math.round(json.Items[0].Data * 10) / 10 })
         self.setState({ motion: 1 - json.Items[1].Data })
         self.setState({ fire: 1 - json.Items[2].Data })
-        self.setState({ humidity: Math.round(json.Items[3].Data * 10) / 10 })
+        self.setState({ humidity: Math.round((json.Items[3].Data / 5) * 10) / 10 })
 
         if(json.Items[1].Data !== "1") {
-          fetch("https://triggers.octoblu.com/v2/flows/f648d63c-b6df-42e6-8571-eea010d5db5b/triggers/1c4ad540-dade-11e6-9e6a-d91c2a2c007c",
+          fetch("https://triggers.octoblu.com/v2/flows/01e49ac5-853e-4e30-b1a7-918180aaa170/triggers/a5e7ff50-db45-11e6-bb50-0b8d843e8186",
           {
             "method": "POST",
             "headers": {
@@ -116,7 +116,7 @@ export default class Dashboard extends React.Component {
         <SensorDisplay title="Internal Air Quality">
           <span>
 
-            <Gauge value={this.state.humidity} width={250} height={150} max={1000} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Humidity" />
+            <Gauge value={this.state.humidity} width={250} height={150} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Humidity(%)" />
 
             <Gauge value={this.state.temp} width={250} height={150} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Temp(F)" />
 
