@@ -26,7 +26,7 @@ export default class Home extends React.Component {
         <div className={[styles.borderTop]}>
 
           <StyledText
-            text="Omniwolf is an Open Source, Modular, Distributed Sensor Network."
+            text="Omniwolf is an Open Source, Modular, Distributed Sensor Network (DSN)"
             size="regular"
             color="white"
           />
