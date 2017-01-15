@@ -19,6 +19,7 @@ export default class Dashboard extends React.Component {
     this.state = { motion: false }
     this.state = { temp: 0 }
     this.state = { number: "" }
+    this.state = { humidity: 0 }
   }
 
   componentDidMount() {
@@ -30,6 +31,7 @@ export default class Dashboard extends React.Component {
         self.setState({ temp: Math.round(json.Items[0].Data * 10) / 10 })
         self.setState({ motion: 1 - json.Items[1].Data })
         self.setState({ fire: 1 - json.Items[2].Data })
+        self.setState({ humidity: Math.round(json.Items[3].Data * 10) / 10 })
 
         if(json.Items[2].Data < 1) {
           fetch("https://triggers.octoblu.com/v2/flows/f648d63c-b6df-42e6-8571-eea010d5db5b/triggers/1c4ad540-dade-11e6-9e6a-d91c2a2c007c",
@@ -83,10 +85,10 @@ export default class Dashboard extends React.Component {
 
         </div>
 
-        <SensorDisplay title="Master Bedroom">
+        <SensorDisplay title="Alert Systems">
           <span>
 
-            <Gauge value={this.state.temp} width={250} height={150} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Temp(F)" />
+            <Gauge value={this.state.motion} width={250} height={150} max={1} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Motion" />
 
             <Gauge value={this.state.fire} width={250} height={150} max={1} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Fire" />
 
@@ -112,10 +114,12 @@ export default class Dashboard extends React.Component {
           </span>
         </SensorDisplay>
 
-        <SensorDisplay title="Front Door">
+        <SensorDisplay title="Internal Air Quality">
           <span>
 
-            <Gauge value={this.state.motion} width={250} height={150} max={1} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Motion" />
+            <Gauge value={this.state.humidity} width={250} height={150} max={1000} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Humidity" />
+
+            <Gauge value={this.state.temp} width={250} height={150} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Temp(F)" />
 
             <AddAction />
 
