@@ -18,19 +18,42 @@ export default class Dashboard extends React.Component {
     this.state = { fire: false }
     this.state = { motion: false }
     this.state = { temp: 0 }
+    this.state = { number: "" }
   }
 
   componentDidMount() {
     let self = this
-    setInterval(function() {
+    this.intr = setInterval(function() {
       fetch("http://api.omniwolf.io/device/pull", {"mode": "cors"}).then(function(response) {
         return response.json()
       }).then(function(json) {
         self.setState({ temp: Math.round(json.Items[0].Data * 10) / 10 })
         self.setState({ motion: 1 - json.Items[1].Data })
         self.setState({ fire: 1 - json.Items[2].Data })
+
+        if(json.Items[2].Data < 1) {
+          fetch("https://triggers.octoblu.com/v2/flows/f648d63c-b6df-42e6-8571-eea010d5db5b/triggers/1c4ad540-dade-11e6-9e6a-d91c2a2c007c",
+          {
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": JSON.stringify({
+              "fire": json.Items[2].Data,
+              "number": self.state.number
+            })
+          })
+        }
       })
     }, 1500)
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.intr)
+  }
+
+  onChange(e) {
+    this.setState({ number: e.target.value })
   }
 
   render() {
@@ -66,7 +89,24 @@ export default class Dashboard extends React.Component {
 
             <Gauge value={this.state.fire} width={250} height={150} max={1} color={'rgb(72, 124, 236)'} backgroundColor={'rgb(215,215,215)'} label="Fire" />
 
-            <AddAction />
+            <div className={[styles.action]}>
+
+              <StyledText
+                text="Action - "
+                color="blue"
+                size="small"
+              />
+              <StyledText
+                text="Send Text"
+                color="white"
+                size="small"
+              />
+
+              <br />
+
+              <input name="phone" placeholder="phone #" className={[styles.input]} onChange={this.onChange.bind(this)}/>
+
+            </div>
 
           </span>
         </SensorDisplay>
