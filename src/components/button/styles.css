@@ -17,6 +17,7 @@
   transition-timing-function: ease;
 
   cursor: pointer;
+  width: 60px;
 }
 
 .button:hover {

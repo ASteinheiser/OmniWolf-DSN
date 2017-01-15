@@ -11,6 +11,7 @@
 
 .container {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  font-family: 'Quicksand', sans-serif;
 
   width: 94%;
   border-radius: 7px;
