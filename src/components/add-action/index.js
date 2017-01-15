@@ -12,7 +12,7 @@ export default class AddAction extends Component {
 
           <StyledText
             text="Add Action"
-            size="large"
+            size="regular"
             color="blue"
           />
 
