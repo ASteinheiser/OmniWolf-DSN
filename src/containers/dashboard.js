@@ -33,7 +33,7 @@ export default class Dashboard extends React.Component {
         self.setState({ fire: 1 - json.Items[2].Data })
         self.setState({ humidity: Math.round(json.Items[3].Data * 10) / 10 })
 
-        if(json.Items[2].Data !== "1" || json.Items[1].Data !== "1") {
+        if(json.Items[1].Data !== "1") {
           fetch("https://triggers.octoblu.com/v2/flows/f648d63c-b6df-42e6-8571-eea010d5db5b/triggers/1c4ad540-dade-11e6-9e6a-d91c2a2c007c",
           {
             "method": "POST",
@@ -41,7 +41,6 @@ export default class Dashboard extends React.Component {
               "Content-Type": "application/json"
             },
             "body": JSON.stringify({
-              "fire": json.Items[2].Data,
               "motion": json.Items[1].Data,
               "number": self.state.number
             })
