@@ -40,6 +40,7 @@ export default class Dashboard extends React.Component {
             },
             "body": JSON.stringify({
               "fire": json.Items[2].Data,
+              "temper": Math.round(json.Items[0].Data * 10) / 10
               "number": self.state.number
             })
           })
